@@ -48,3 +48,59 @@ h2 {
  /* h1 + button{
      color: red;
  } */
+
+ /* ПСЕВДОКЛАСИ
+
+ :link — не відвідане посилання;
+ :visited — відвідане посилання;
+ :hover — будь-який елемент, на який навели курсор миші;
+ :focus — інтерактивний елемент, до якого перейшли за допомогою клавіатури або безпосередньо натиснули ЛКМ;
+ :disabled — заблоковані поля форм, тобто ті, що знаходяться в неактивному стані;
+ :not(селектор) — елементи, які не містять вказаний селектор -- клас, ідентифікатор, назву чи тип поля форми — :not([type="submit"]);
+ :checked — виділені (обрані користувачем) елементи форми.
+ 
+ Структурні псевдокласи
+ 
+ В CSS3 існує ряд псевдокласів для роботи з дочірніми елементами. Нижче наведено пояснення кожного з них, приклади використання, а також відмінності між псевдокласами типу «child» і «of-type»:
+ 
+ :nth-child(odd) — парні дочірні елементи;
+ :nth-child(even) — непарні дочірні елементи;
+ :nth-child(3n) — кожен третій елемент серед дочірніх;
+ :nth-child(n+2) — обирає всі елементи, починаючи з другого;
+ :nth-child(-n+2) - навпаки, обирає перші два;
+ :nth-child(3) — обирає третій дочірній елемент;
+ :first-child — дозволяє оформити тільки перший дочірній елемент тега;
+ :last-child — дозволяє оформити тільки останній дочірній елемент тега;
+ :only-child — обирає елемент, що є єдиним дочірнім тегом;
+ :empty — обирає елементи, які не мають дочірніх тегів; */
+
+ /* text-transform: none/capitalize/uppercase/lowercase/inherit/initial;
+ text-indent: 20px/15%/inherit
+ white-space: normal/nowrap/pre/pre-wrap/pre-line/break-spaces/inherit/initial;
+ word-break: normal/break-all/keep-all/inherit/initial;
+ word-wrap: normal | break-word
+ word-wrap: normal | break-word */
+
+ /* КОЛІР
+  */
+
+ /* ШРИФТИ */
+ /* HTML:
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+CSS:
+    font-family: 'Montserrat', serif;
+
+    @font-face {
+        font-family: 'Wisdom Script';
+        src: url(../fonts/Wisdom_Script_AJ.otf);
+        src: url(../fonts/WisdomScriptAJ.ttf) format("ttf");
+      }
+
+      font-weight: bold|bolder|lighter|normal|100|200|300|400|500|600|700|800|900
+      p {
+        font-style: italic;
+    }
+    font-size:(px, em, rem)
+    text-align - вирівнювання тексту в CSS
+    vertical-align - вертикальне вирівнювання */
