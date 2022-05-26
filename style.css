@@ -1,106 +1,138 @@
-/* Універсальний *
-Теговый селектор (селектор элементу) 
-Селектор класу
-Селектор ідентифікатора
-Селектор груп h1, p
-Селектор нащадку body a
-Дочірний селектор header > a  
-Сусідній селектор header + main
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196f3;
+    --background-color: #ffffff;
+  }
+  
+  /* body {
+    color: var(--primary-text-color);
+    background-color: #ffffff;
+    font-family: roboto, sans-serif;
+  } */
+  /* a {
+    text-decoration: none;
+  } */
+  
+  /*шапка сайта*/
+  /* ul {
+    list-style: none;
+  } */
+  /*logo*/
+  .logo {
+    color: #000000;
 
-Споріднений селектор p~a
-Селектор атрибуту input[type=text] {...}
-*/
-/* h1 {
-    color: black;
-} */
-
-/* * {
-    color: blue;
-} */
-
- /* a {
-    color: brown;
-}
-
-h2 {
-    color: aqua;
-} */ 
-
-/* .head-title .title {
-    color: blueviolet;
-} 
-.head-title h3{
-
-} */
-
- /* h3, p {
-     color: green;
- } */
-
- /* main a {
-     color: red;
- } */
-
- /* main > a {
-     color: brown;
- } */
-
- /* h1 + button{
-     color: red;
- } */
-
- /* ПСЕВДОКЛАСИ
-
- :link — не відвідане посилання;
- :visited — відвідане посилання;
- :hover — будь-який елемент, на який навели курсор миші;
- :focus — інтерактивний елемент, до якого перейшли за допомогою клавіатури або безпосередньо натиснули ЛКМ;
- :disabled — заблоковані поля форм, тобто ті, що знаходяться в неактивному стані;
- :not(селектор) — елементи, які не містять вказаний селектор -- клас, ідентифікатор, назву чи тип поля форми — :not([type="submit"]);
- :checked — виділені (обрані користувачем) елементи форми.
+  }
+  
+  span {
+    color: var(--accent-color);
+  }
+  
+  /*шапка навигации*/
+  .nav-list .link-current {
+    color: var(--accent-color);
+  
+  }
+  .nav-list .link {
+    color: #000000;
+  
+  }
+  .nav-list .link:hover,
+  .nav-list .link:focus,
+  .contacts-nav .item:focus,
+  .contacts-nav .item:hover  {
+    color: var(--accent-color);
+  }
+  
+  .contacts-nav .item {
+    color: var(--primary-text-color);
+  
+  }
+  
+  /*секции*/
+  .section-title,
+  .fetures .title {
+    color: var(--title-text-color);
+  
+  }
+  
+  /*особенности*/
+  
+  .feture .text {
+    color: var(--primary-text-color);
+  
+  }
  
- Структурні псевдокласи
- 
- В CSS3 існує ряд псевдокласів для роботи з дочірніми елементами. Нижче наведено пояснення кожного з них, приклади використання, а також відмінності між псевдокласами типу «child» і «of-type»:
- 
- :nth-child(odd) — парні дочірні елементи;
- :nth-child(even) — непарні дочірні елементи;
- :nth-child(3n) — кожен третій елемент серед дочірніх;
- :nth-child(n+2) — обирає всі елементи, починаючи з другого;
- :nth-child(-n+2) - навпаки, обирає перші два;
- :nth-child(3) — обирає третій дочірній елемент;
- :first-child — дозволяє оформити тільки перший дочірній елемент тега;
- :last-child — дозволяє оформити тільки останній дочірній елемент тега;
- :only-child — обирає елемент, що є єдиним дочірнім тегом;
- :empty — обирає елементи, які не мають дочірніх тегів; */
-
- /* text-transform: none/capitalize/uppercase/lowercase/inherit/initial;
- text-indent: 20px/15%/inherit
- white-space: normal/nowrap/pre/pre-wrap/pre-line/break-spaces/inherit/initial;
- word-break: normal/break-all/keep-all/inherit/initial;
- word-wrap: normal | break-word
- word-wrap: normal | break-word */
-
- /* КОЛІР
-  */
-
- /* ШРИФТИ */
- /* HTML:
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-
-CSS:
-    font-family: 'Montserrat', serif;
-
-    @font-face {
-        font-family: 'Wisdom Script';
-        src: url(../fonts/Wisdom_Script_AJ.otf);
-        src: url(../fonts/WisdomScriptAJ.ttf) format("ttf");
-      }
-
-      font-weight: bold|bolder|lighter|normal|100|200|300|400|500|600|700|800|900
-      p {
-        font-style: italic;
-    }
-    font-size:(px, em, rem)
-    text-align - вирівнювання тексту в CSS
-    vertical-align - вертикальне вирівнювання */
+  
+  /*наща команда*/
+  .team .name {
+    color: var(--title-text-color);
+  
+  }
+  
+  .team .position {
+    color: var(--primary-text-color);
+  
+  }
+  /*блок герой*/
+  .hero {
+    background-color: #2f303a;
+  }
+  .hero-title {
+    color: var(--background-color);
+  
+  }
+  .hero-button {
+    color: var(--background-color);
+  
+    background-color: var(--accent-color);
+  
+  }
+  
+  /*Footer*/
+  .footer,
+  .footer-address {
+    color: #ffffff;
+    background-color: #2f303a;
+  
+  }
+  .footer-logo {
+    color: #ffffff;
+  
+  }
+  .footer-contacts-link {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .footer-contacts-link:hover,
+  .footer-contacts-link:focus {
+    color: var(--accent-color);
+  }
+  
+  /*PORTFOLIO*/
+  
+  /*filters*/
+  
+  .filter-button {
+    color: var(--title-text-color);
+    /* font-family: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.03em; */
+  }
+  .filter-button:hover,
+  .filter-button:focus {
+    color: var(--background-color);
+    background-color: var(--accent-color);
+  }
+  
+  /*примеры работ*/
+  
+  .examples-titel {
+    color: var(--title-text-color);
+  }
+  
+  .examples-type {
+    color: var(--primary-text-color);
+  }
+   
