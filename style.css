@@ -1,3 +1,19 @@
+/* 
+   text-transform: none/capitalize/uppercase/lowercase/inherit/initial;
+   text-indent: 20px/15%/inherit
+   white-space: normal/nowrap/pre/pre-wrap/pre-line/break-spaces/inherit/initial;
+   word-break: normal/break-all/keep-all/inherit/initial;
+   word-spacing: normal/1px/0.2e/50%/inherit/initial;
+ */
+ /* 
+   font-weight: bold|bolder|lighter|normal|100|200|300|400|500|600|700|800|900
+   p {
+    font-style: italic;
+}
+    text-align: left|right|center|justify|start|end
+
+ */
+
 :root {
     --primary-text-color: #757575;
     --title-text-color: #212121;
@@ -51,16 +67,20 @@
   
   /*секции*/
   .section-title,
-  .fetures .title {
+  .features .title {
     color: var(--title-text-color);
   
   }
   
   /*особенности*/
   
-  .feture .text {
+  .features .text {
     color: var(--primary-text-color);
-  
+    /* text-transform */
+    /* text-indent: 20px/15%/inherit;
+    white-space: normal/nowrap/pre/pre-wrap/pre-line/break-spaces/inherit/initial;
+    word-break: normal/break-all/keep-all/inherit/initial;
+    word-spacing: normal/1px/0.2e/50%/inherit/initial; */
   }
  
   
