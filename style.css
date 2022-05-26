@@ -1,50 +1,138 @@
-/* Універсальний *
-Теговый селектор (селектор элементу) 
-Селектор класу
-Селектор ідентифікатора
-Селектор груп h1, p
-Селектор нащадку body a
-Дочірний селектор header > a  
-Сусідній селектор header + main
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196f3;
+    --background-color: #ffffff;
+  }
+  
+  /* body {
+    color: var(--primary-text-color);
+    background-color: #ffffff;
+    font-family: roboto, sans-serif;
+  } */
+  /* a {
+    text-decoration: none;
+  } */
+  
+  /*шапка сайта*/
+  /* ul {
+    list-style: none;
+  } */
+  /*logo*/
+  .logo {
+    color: #000000;
 
-Споріднений селектор p~a
-Селектор атрибуту input[type=text] {...}
-*/
-/* h1 {
-    color: black;
-} */
-
-/* * {
-    color: blue;
-} */
-
- /* a {
-    color: brown;
-}
-
-h2 {
-    color: aqua;
-} */ 
-
-/* .head-title .title {
-    color: blueviolet;
-} 
-.head-title h3{
-
-} */
-
- /* h3, p {
-     color: green;
- } */
-
- /* main a {
-     color: red;
- } */
-
- /* main > a {
-     color: brown;
- } */
-
- /* h1 + button{
-     color: red;
- } */
+  }
+  
+  span {
+    color: var(--accent-color);
+  }
+  
+  /*шапка навигации*/
+  .nav-list .link-current {
+    color: var(--accent-color);
+  
+  }
+  .nav-list .link {
+    color: #000000;
+  
+  }
+  .nav-list .link:hover,
+  .nav-list .link:focus,
+  .contacts-nav .item:focus,
+  .contacts-nav .item:hover  {
+    color: var(--accent-color);
+  }
+  
+  .contacts-nav .item {
+    color: var(--primary-text-color);
+  
+  }
+  
+  /*секции*/
+  .section-title,
+  .fetures .title {
+    color: var(--title-text-color);
+  
+  }
+  
+  /*особенности*/
+  
+  .feture .text {
+    color: var(--primary-text-color);
+  
+  }
+ 
+  
+  /*наща команда*/
+  .team .name {
+    color: var(--title-text-color);
+  
+  }
+  
+  .team .position {
+    color: var(--primary-text-color);
+  
+  }
+  /*блок герой*/
+  .hero {
+    background-color: #2f303a;
+  }
+  .hero-title {
+    color: var(--background-color);
+  
+  }
+  .hero-button {
+    color: var(--background-color);
+  
+    background-color: var(--accent-color);
+  
+  }
+  
+  /*Footer*/
+  .footer,
+  .footer-address {
+    color: #ffffff;
+    background-color: #2f303a;
+  
+  }
+  .footer-logo {
+    color: #ffffff;
+  
+  }
+  .footer-contacts-link {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .footer-contacts-link:hover,
+  .footer-contacts-link:focus {
+    color: var(--accent-color);
+  }
+  
+  /*PORTFOLIO*/
+  
+  /*filters*/
+  
+  .filter-button {
+    color: var(--title-text-color);
+    /* font-family: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.03em; */
+  }
+  .filter-button:hover,
+  .filter-button:focus {
+    color: var(--background-color);
+    background-color: var(--accent-color);
+  }
+  
+  /*примеры работ*/
+  
+  .examples-titel {
+    color: var(--title-text-color);
+  }
+  
+  .examples-type {
+    color: var(--primary-text-color);
+  }
+   

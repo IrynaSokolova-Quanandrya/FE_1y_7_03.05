@@ -5,148 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEB studio</title>
-    <!-- Вбудовані -->
-    <!-- <style>
-        h1 {
-            color: blue;
-        }
-        a {
-            color: red;
-        }
-    </style> -->
+    <!-- <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css"> -->
     <!-- Зовнішній файл стилю -->
-<link rel="stylesheet" href="style.css">
-<!-- Інлайнові стилі -->
-<!-- <p style="color: teal;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error incidunt rem harum quod alias consequatur delectus suscipit assumenda vero cumque cum minima veritatis nisi facilis dicta fugiat vitae, quae nobis.</p> -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Шапка -->
-    <header>
-        <nav>
-            <a href="">WebStudio</a>
-           <ul>
-               
-            <li><a href="">Студія</a></li>
-            <li><a href="">Портфоліо</a></li>
-            <li><a href="">Контакти</a></li>
+    <header class="page-header">
+        <nav>    
+            <a class="logo" href="./"><span class="logo-span">Web</span>Studio</a>
+        <ul class="nav-list">               
+            <li class="list-item"><a class="link link-current" href="./">Студія</a></li>
+            <li class="list-item"><a class="link" href="./portfolio.html" target="_blank" rel="noopener noreferer">Портфоліо</a></li>
+            <li class="list-item"><a class="link" href="">Контакти</a></li>
         </ul> 
         </nav>
-        <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a href="tel:+380961111111">+38 096 111 11 11</a>
-    </header>
-    <main>
-        <!-- Секція герой -->
-        <section>
-            <h1>ефективні рішення для вашого бізнесу</h1>
-            <button type="button">Замовити послугу</button>
-        </section>
-    </main>
-
-
-    <!-- Службові теги - містять здебільшого інформацію для браузерів та пошукових систем. -->
-        <!-- <!doctype>
-        <head>
-        <title>
-        <meta> -->
-    <!-- Теги групування контенту - більшість із них семантичні. -->
-
-        <!-- <div> - універсальний блок
-        <header> - шапка сайту
-        <main> - основний контент сайту. Містить в собі, бокові колонки, статті, секції та інші блоки.
-        <aside> - бокова колонка (сайд)
-        <article> - використовується в блогах для позначення статей, передбачає наявність заголовка, та даних про автора, дату публікації та ін.
-        <section> - секція, часто використовується в односторінкових сайтах, передбачає наявність заголовка та підзаголовка
-        <footer> - підвал сайту, містить інформацію про авторство сайту, контактні дан та ін. -->
-    <!-- Списки -->
-        <!-- <ol> - контейнер для нумерованого списку
-        <ul> - контейнер для маркованого списку
-                елементи списків створюються за допомогою тегів <li>
-
-        <dl> - список визначень
-        <dl>  
-            <dt>HTML</dt>  
-            <dd>- hyper text markup language</dd>
-        </dl> -->
-    
-    <!-- Таблиці -->
-        <!-- <table> - контейнер таблиці
-        <thead> - шапка таблиці
-        <th> - комірка шапки
-        <tbody> - тіло таблиці
-        <tfoot> - підвал таблиці
-        <tr> - окремий рядок
-        <td> - окрема комірка -->
-    <!-- Текстові елементи -->
-        <!-- Теги заголовка: <h1> ... <h6>
-        Теги для форматування тексту: <b>, <i>, <u>, <mark>, <small>, <sub>, <sup>
-        Теги для введення комп'ютерного коду: <code>, <kbd>, <samp>, <var>, <pre>
-        Теги оформлення цитат: <abbr>, <bdo>, <blockquote>, <q>, <cite>, <dfn> -->
-    <!-- Абзаци та засоби переносу тексту на новий рядок: -->
-        <!-- <p> - абзац
-        <br> - перехід на новий рядок
-        <hr> - розділювач тесту (лінія) -->
-    <!-- Медіа файли -->
-        <!-- <img> - тег для вставки зображення в розмітку. Обов'язкові атрибути src (посилання на саме зображення) та alt (альтернативний текст на випадок, якщо зображення не завантажується).
-        <video> - додає та відтворює відеоролики на веб-сторінці
-        <audio> - так як і відео, тільки аудіо -->
-    <!-- Форми -->
-        <!-- <form> - контейнер для форми
-        <input> - поля форми
-        <select> - випадаючий список
-        <button> - кнопка -->
-=======
-            <a href="./"><span>Web</span>Studio</a>
-           <ul>
-               
-            <li><a href="./">Студія</a></li>
-            <li><a href="./portfolio.html" target="_blank" rel="noopener noreferer">Портфоліо</a></li>
-            <li><a href="">Контакти</a></li>
-        </ul> 
-        </nav>
-        <ul>
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <ul class="contacts-nav">
+            <li><a class="item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="item" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
     </header>
     <main>
-        <a href="">link</a>
-        <a href="">link</a>
-        <a href="">link</a>
-        <a href="">link</a>
-
         <!-- Секція герой -->
-        <section>
-            <a href="">link 54</a>
-            <h1 style="color: red;">ефективні рішення для вашого бізнесу</h1>
-            <button type="button">Замовити послугу</button>
+        <section class="hero">
+            <h1 class="hero-title">ефективні рішення для вашого бізнесу</h1>
+            <button type="button" class="hero-button">Замовити послугу</button>
         </section>
         <!-- Секція особливості -->
-        <section>
-            <button type="button">Button 100
-            </button>
+        <section class="section">
             <h2>Особливості</h2>
-            <ul>
+            <ul class="features">
                 <li>
-                    <h3 class="head-title title ">УВАГА ДО ДЕТАЛЕЙ</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, odit.</p>
+                    <h3 class="title ">УВАГА ДО ДЕТАЛЕЙ</h3>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, odit.</p>
                 </li>
                 <li>
-                    <h3 class="head-title title">ПунктуальнІсть</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, odit.</p>
+                    <h3 class="title">ПунктуальнІсть</h3>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, odit.</p>
                 </li>
                 <li>
-                    <h3 class="head-title title">ПЛАНУВАННЯ</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, odit.</p>
+                    <h3 class="title">ПЛАНУВАННЯ</h3>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, odit.</p>
                 </li>
                 <li>
-                    <h3 class="head-title title">СУЧАСНІ ТЕхнології</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, odit.</p>
+                    <h3 class="title">СУЧАСНІ ТЕхнології</h3>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, odit.</p>
                 </li>                
             </ul>
         </section>
         <!-- Секція чим ми займаємось -->
-        <section>
-            <h2>Чим ми займаємося</h2>
+        <section class="section">
+            <h2 class="section-title">Чим ми займаємося</h2>
             <ul>
                 <li><img src="./img/desktop.jpg" alt="Зображення планшету"></li>
                 <li><img src="./img/laptop.jpg" alt="Зображення планшету"></li>
@@ -154,40 +63,40 @@
             </ul>
         </section>
         <!-- Секція наша команда -->
-        <section id="team">
-            <h2>Наша команда</h2>
-            <ul>
+        <section class="section">
+            <h2 class="section-title">Наша команда</h2>
+            <ul class="team">
                 <li>
                     <img src="./img/demianenko.jpg" alt="Дем'яненко Шгор">
-                    <p>Ігор Дем’яненко</p>
-                    <p>Product Designer</p>
+                    <p class="name">Ігор Дем’яненко</p>
+                    <p class="position">Product Designer</p>
                 </li>
                 <li>
                     <img src="./img/repina.jpg" alt="Ольга Репіна">
-                    <p>Ольга Репіна</p>
-                    <p>Frontend Developer</p>
+                    <p class="name">Ольга Репіна</p>
+                    <p class="position">Frontend Developer</p>
                 </li>
                 <li>
                     <img src="./img/tarasov.jpg" alt="Микола Тарасов">
-                    <p>Микола Тарасов</p>
-                    <p>Marketing</p>
+                    <p class="name">Микола Тарасов</p>
+                    <p class="position">Marketing</p>
                 </li>
                 <li>
                     <img src="./img/ermakov.jpg" alt="Михайло Єрмаков">
-                    <p>Михайло Єрмаков</p>
-                    <p>UI Designer</p>
+                    <p class="name">Михайло Єрмаков</p>
+                    <p class="position">UI Designer</p>
                 </li>
             </ul>
         </section>
         
     </main>
         <!-- Футер -->
-        <footer>
-            <a href=""><span>Web</span>Studio</a>
-            <address>м. Київ, пр-т Лесі Українки, 26</address>
-            <ul>
-                <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <footer class="footer">
+            <a class="footer-logo" href=""><span>Web</span>Studio</a>
+            <address class="footer-address">м. Київ, пр-т Лесі Українки, 26</address>
+            <ul class="footer-contacts">
+                <li><a class="footer-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li><a class="footer-contacts-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
 </footer>
 </body>
