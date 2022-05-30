@@ -21,23 +21,28 @@
     --background-color: #ffffff;
   }
   
-  /* body {
+  body {
     color: var(--primary-text-color);
     background-color: #ffffff;
     font-family: roboto, sans-serif;
-  } */
-  /* a {
+  }
+  a {
     text-decoration: none;
-  } */
+  }
   
   /*шапка сайта*/
-  /* ul {
+  ul {
     list-style: none;
-  } */
+  }
   /*logo*/
   .logo {
     color: #000000;
 
+    font-family: Raleway, sans-serif;
+    font-style: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 3%;
   }
   
   span {
@@ -48,51 +53,88 @@
   .nav-list .link-current {
     color: var(--accent-color);
   
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
   }
   .nav-list .link {
     color: #000000;
   
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
   }
   .nav-list .link:hover,
-  .nav-list .link:focus,
-  .contacts-nav .item:focus,
-  .contacts-nav .item:hover  {
+  .nav-list .link:focus {
     color: var(--accent-color);
   }
   
-  .contacts-nav .item {
+  .contacts-nav a {
     color: var(--primary-text-color);
   
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+  .contacts-nav a:focus,
+  .contacts-nav a:hover {
+    color: var(--accent-color);
   }
   
   /*секции*/
-  .section-title,
-  .features .title {
+  .section-title {
     color: var(--title-text-color);
   
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
   }
   
   /*особенности*/
+  .fetures .title {
+    color: var(--title-text-color);
   
-  .features .text {
-    color: var(--primary-text-color);
-    /* text-transform */
-    /* text-indent: 20px/15%/inherit;
-    white-space: normal/nowrap/pre/pre-wrap/pre-line/break-spaces/inherit/initial;
-    word-break: normal/break-all/keep-all/inherit/initial;
-    word-spacing: normal/1px/0.2e/50%/inherit/initial; */
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
   }
- 
+  
+  .feture .text {
+    color: var(--primary-text-color);
+  
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+  }
+  
+  .title {
+    color: var(--title-text-color);
+  }
   
   /*наща команда*/
   .team .name {
     color: var(--title-text-color);
   
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
   }
   
   .team .position {
     color: var(--primary-text-color);
   
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
   }
   /*блок герой*/
   .hero {
@@ -101,12 +143,23 @@
   .hero-title {
     color: var(--background-color);
   
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
   }
   .hero-button {
     color: var(--background-color);
   
     background-color: var(--accent-color);
   
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.06em;
   }
   
   /*Footer*/
@@ -115,10 +168,22 @@
     color: #ffffff;
     background-color: #2f303a;
   
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
   }
   .footer-logo {
     color: #ffffff;
   
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
   }
   .footer-contacts-link {
     color: rgba(255, 255, 255, 0.6);
@@ -134,11 +199,11 @@
   
   .filter-button {
     color: var(--title-text-color);
-    /* font-family: inherit;
+    font-family: inherit;
     cursor: pointer;
     font-weight: 500;
     line-height: 1.6;
-    letter-spacing: 0.03em; */
+    letter-spacing: 0.03em;
   }
   .filter-button:hover,
   .filter-button:focus {
@@ -150,9 +215,17 @@
   
   .examples-titel {
     color: var(--title-text-color);
+  
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
   }
   
   .examples-type {
     color: var(--primary-text-color);
+  
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
   }
-   
