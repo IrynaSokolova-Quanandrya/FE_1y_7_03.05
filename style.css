@@ -20,6 +20,10 @@
     --accent-color: #2196f3;
     --background-color: #ffffff;
   }
+/* Глобальний border-box */
+
+
+/* Решта коду */
   
   body {
     color: var(--primary-text-color);

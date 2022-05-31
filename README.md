@@ -1,18 +1,17 @@
 - QnA
 
-- Переносимо локальний репозиторій Вебстудії в створенний віддалений.
-- оформлення та здача ДЗ
-- Властивості CSS для форматування тексту (файл style.css)
-- Підключення сторонніх шрифтів до розмітки
-  1. через CDN з видаленого сервера (наприклад Google Fonts)
-  - google.fonts
-  - devtools
-  - [System Font Stack](https://systemfontstack.com) та
-    [link](https://devhints.io/css-system-font-stack)
-  2. локально, попередньо завантаживши потрібний шрифт на комп'ютер: @font-face
-     { font-family: 'Wisdom Script'; src: url(../fonts/Wisdom_Script_AJ.otf);
-     src: url(../fonts/WisdomScriptAJ.ttf) format("ttf"); }
-- - Font - Стилі для шрифтів: font-family, font-size, font-style font-family,
-    font-size, font-style
+Як можна підключити шрифт до сайту? Який спосіб краще? Які CSS властивості
+тексту вам запам'ятались із минулого уроку? Які найбільш вживані властивості
+шрифтів на вашу думку?
+
+- Блочна модель
+- Властивості width і height
+- box-sizing
+  - content-box - дефолтне значення. В такому випадку властивості width/height
+    означають те, що знаходиться всередині padding.
+  - border-box - значення width/height задають ширину/висоту всього елемента
+- Властивість display: властивість, яка визначає, як елемент має бути показаний
+  в документі.
+-
 - практика
 - резюме
