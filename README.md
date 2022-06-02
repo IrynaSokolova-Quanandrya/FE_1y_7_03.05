@@ -1,16 +1,11 @@
-- QnA
-
-- Блочна модель: content, padding, border, margin
-- Властивості width і height. Висота тільки для декоративних елементів.
-- Рядковий та блочний елементи
-- Схлопування вертикальних відступів
-- Випадіння вертикальних відступів (section>h2)
-- box-sizing
-  - content-box - дефолтне значення. В такому випадку властивості width/height
-    означають те, що знаходиться всередині padding.
-  - border-box - значення width/height задають ширину/висоту всього елемента
-- Центрування блочних елементів з margin auto: робимо div.container
+- QnA В чому полягає суть блочної моделі? box-sizing?
+- Псевдокласи :first-child і :last-child
 - Властивість display: властивість, яка визначає, як елемент має бути показаний
   в документі.
+- Flexible Box Layout (Flexbox)
+- Властивості контейнера: display: flex | inline-flex, flex-direction,
+  justify-content, align-items, flex-wrap, align-content
+- Сітка елементів
+
 - практика
 - резюме
