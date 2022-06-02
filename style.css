@@ -1,25 +1,36 @@
-/* 
-   text-transform: none/capitalize/uppercase/lowercase/inherit/initial;
-   text-indent: 20px/15%/inherit
-   white-space: normal/nowrap/pre/pre-wrap/pre-line/break-spaces/inherit/initial;
-   word-break: normal/break-all/keep-all/inherit/initial;
-   word-spacing: normal/1px/0.2e/50%/inherit/initial;
- */
- /* 
-   font-weight: bold|bolder|lighter|normal|100|200|300|400|500|600|700|800|900
-   p {
-    font-style: italic;
-}
-    text-align: left|right|center|justify|start|end
-
- */
-
 :root {
     --primary-text-color: #757575;
     --title-text-color: #212121;
     --accent-color: #2196f3;
     --background-color: #ffffff;
   }
+/* Глобальний border-box */
+
+html{
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+ .box{
+  border: 2px solid red;
+  width: 500px;
+  
+}
+
+.filter-link{
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 73px;
+  height: 38px;
+  padding: 6px 22px;
+}
+/* Решта коду */
   
   body {
     color: var(--primary-text-color);
@@ -95,7 +106,7 @@
     letter-spacing: 0.03em;
   }
   
-  /*особенности*/
+  /*особливості*/
   .fetures .title {
     color: var(--title-text-color);
   
@@ -117,7 +128,7 @@
     color: var(--title-text-color);
   }
   
-  /*наща команда*/
+  /*наша команда*/
   .team .name {
     color: var(--title-text-color);
   
@@ -211,7 +222,7 @@
     background-color: var(--accent-color);
   }
   
-  /*примеры работ*/
+  /*приклади рабіт*/
   
   .examples-titel {
     color: var(--title-text-color);
