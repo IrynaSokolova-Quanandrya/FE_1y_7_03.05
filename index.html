@@ -12,25 +12,12 @@
 </head>
 <body>
 
-
-    <div class="box">
-        <h2 class="box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, voluptates?</h2>
-        <h2>Title</h2>
-    </div>
-    <div class="box">
-        <h2 class="box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, voluptates?</h2>
-        <h2>Title</h2>
-    </div>
-    <!-- <div class="box bottom-box">
-        <p class="box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, voluptates?</p>
-    </div>
-    <div class="box">
-        <p class="box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, voluptates?</p>
-    </div> -->
     <!-- Шапка -->
     <header class="page-header">
-        <nav>    
-            <a class="logo" href="./"><span>Web</span>Studio</a>
+    <div class="container header-nav">
+        <a class="logo" href="./"><span>Web</span>Studio</a>
+        <nav class="navigation"> 
+            
         <ul class="nav-list">               
             <li class="list-item"><a class="link link-current" href="./">Студія</a></li>
             <li class="list-item"><a class="link" href="./portfolio.html" target="_blank" rel="noopener noreferer">Портфоліо</a></li>
@@ -41,18 +28,22 @@
             <li><a class="item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
             <li><a class="item" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
+    </div>
     </header>
     <main>
         <!-- Секція герой -->
         <section class="hero">
-            <h1 class="hero-title">ефективні рішення для вашого бізнесу</h1>
+            <div class="container">
+                <h1 class="hero-title">ефективні рішення для вашого бізнесу</h1>
             <button type="button" class="hero-button">Замовити послугу</button>
+            </div>
         </section>
         <!-- Секція особливості -->
         <section class="section">
-            <h2>Особливості</h2>
+            <div class="container">
+                <h2>Особливості</h2>
             <ul class="features">
-                <li>
+                <li class="features-item">
                     <h3 class="title ">УВАГА ДО ДЕТАЛЕЙ</h3>
                     <p class="text">Lorem          
                         ipsum dolor                     sit amet consectetur 
@@ -72,52 +63,59 @@
                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, a nemo perferendis quia accusamus temporibus repellat sequi architecto, et fugit in similique nam ipsa adipisci quae rerum quo tempora illo!</p>
                 </li>                
             </ul>
+            </div>
         </section>
         <!-- Секція чим ми займаємось -->
         <section class="section">
-            <h2 class="section-title">Чим ми займаємося</h2>
+            <div class="container">
+                <h2 class="section-title">Чим ми займаємося</h2>
             <ul>
                 <li><img src="./img/desktop.jpg" alt="Зображення планшету"></li>
                 <li><img src="./img/laptop.jpg" alt="Зображення планшету"></li>
                 <li><img src="./img/desctop-1.jpg" alt="Зображення планшету"></li>
             </ul>
+            </div>
         </section>
         <!-- Секція наша команда -->
         <section class="section">
-            <h2 class="section-title">Наша команда</h2>
+            <div class="container">
+                <h2 class="section-title">Наша команда</h2>
             <ul class="team">
-                <li>
+                <li class="team-link">
                     <img src="./img/demianenko.jpg" alt="Дем'яненко Шгор">
                     <p class="name">Ігор Дем’яненко</p>
                     <p class="position">Product Designer</p>
                 </li>
-                <li>
+                <li class="team-link">
                     <img src="./img/repina.jpg" alt="Ольга Репіна">
                     <p class="name">Ольга Репіна</p>
                     <p class="position">Frontend Developer</p>
                 </li>
-                <li>
+                <li class="team-link">
                     <img src="./img/tarasov.jpg" alt="Микола Тарасов">
                     <p class="name">Микола Тарасов</p>
                     <p class="position">Marketing</p>
                 </li>
-                <li>
+                <li class="team-link">
                     <img src="./img/ermakov.jpg" alt="Михайло Єрмаков">
                     <p class="name">Михайло Єрмаков</p>
                     <p class="position">UI Designer</p>
                 </li>
             </ul>
+            </div>
         </section>
         
     </main>
         <!-- Футер -->
         <footer class="footer">
-            <a class="footer-logo" href=""><span>Web</span>Studio</a>
+            <div class="container">
+                <a class="footer-logo" href=""><span>Web</span>Studio</a>
             <address class="footer-address">м. Київ, пр-т Лесі Українки, 26</address>
             <ul class="footer-contacts">
                 <li><a class="footer-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                 <li><a class="footer-contacts-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
+            </div>
 </footer>
 </body>
 </html>
