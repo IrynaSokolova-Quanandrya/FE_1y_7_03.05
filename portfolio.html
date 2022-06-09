@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet">
+    <title>WEB studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">    
+    <!-- Зовнішній файл стилю -->
     <link rel="stylesheet" href="style.css">
 </head>
-<!--Page portfolio-->
-
 <body>
-    <!--Шапка сайта-->
-    <header class="page-header">
-        <nav>    
-            <a class="logo" href="./"><span>Web</span>Studio</a>
+
+    <!-- Шапка -->
+    <header>
+    <div class="header-nav container">
+        <a class="logo" href="./"><span>Web</span>Studio</a>
+        <nav>             
         <ul class="nav-list">               
             <li class="list-item"><a class="link link-current" href="./">Студія</a></li>
             <li class="list-item"><a class="link" href="./portfolio.html" target="_blank" rel="noopener noreferer">Портфоліо</a></li>
@@ -23,24 +24,23 @@
         </ul> 
         </nav>
         <ul class="contacts-nav">
-            <li><a class="item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="item" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
+    </div>
     </header>
-    <!--Основная секция-->
+    <!--Основна секція-->
 <main>
     <section>
-        <h1>Примеры работ</h1>
+        <h1>Приклади робіт</h1>
     <ul class="filter">
         <li><a class="filter-link" href="">Усе</a></li>
-        <li><a class="filter-link" href="">Усе</a></li>
-        <li><a class="filter-link" href="">Усе</a></li>
-        <li><a class="filter-link" href="">Усе</a></li>
-        <li><a class="filter-link" href="">Усе</a></li>
-        <li><a class="filter-link" href="">Усе</a></li>
-
+        <li><a class="filter-link" href="">Веб-сайти</a></li>
+        <li><a class="filter-link" href="">Застосунки</a></li>
+        <li><a class="filter-link" href="">Дизайн</a></li>
+        <li><a class="filter-link" href="">Маркетинг</a></li>
     </ul>
-    <ul class="examples">
+    <ul >
         <li>
             <a href=""> <img src="./img/portfolio/laptop.jpg" alt="Фотографии троих людей на экране ноутбука" width="370" height="294">
             <h2  class="examples-titel">Технокряк</h2>
@@ -101,12 +101,14 @@
 </main>
     <!--Footer-->
     <footer class="footer">
-        <a class="footer-logo" href=""><span>Web</span>Studio</a>
+        <div class="container">
+            <a class="footer-logo" href=""><span>Web</span>Studio</a>
         <address class="footer-address">м. Київ, пр-т Лесі Українки, 26</address>
         <ul class="footer-contacts">
             <li><a class="footer-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
             <li><a class="footer-contacts-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
+        </div>
 </footer>
 </body>
 </html>
