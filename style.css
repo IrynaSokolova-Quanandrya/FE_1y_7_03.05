@@ -16,8 +16,6 @@ html{
   box-sizing: inherit;
 }
 
-
-
 /* Решта коду */
   
   body {
@@ -25,6 +23,7 @@ html{
     background-color: #ffffff;
     font-family: roboto, sans-serif;
   }
+
   a {
     text-decoration: none;
   }
@@ -35,19 +34,14 @@ html{
     margin-top: 0;
     margin-bottom: 0;
   }
-   /* .section {
-    margin-top: 0%;
-    margin-bottom: 0%;
-    padding-top: 94px;
-    padding-bottom: 94px;
-  } */
+   
   .container {
     width: 1200px;
   
     margin-left: auto;
     margin-right: auto;
     margin-top: 0; 
-   padding-left: 15px;
+    padding-left: 15px;
     padding-right: 15px; 
   }
   h1,
@@ -63,13 +57,15 @@ html{
     max-width: 100%;
     height: auto;
   } 
-  
-  /*шапка сайта*/
+
   ul {
-    /* padding: 0;
-    margin: 0; */
+    padding: 0;
+    margin: 0;
     list-style: none;
   }
+
+  /*шапка сайта*/
+  
   /*logo*/
   .logo {
     color: #000000;
@@ -85,11 +81,30 @@ html{
     color: var(--accent-color);
   }
   
-  /*шапка навигации*/
+  /*шапка навигації*/
+  .header-nav{
+    box-sizing: border-box;
+    margin-bottom: 0;
+    }
+    
+  .header-nav,
+  .contacts-nav
+  {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .nav-list{
+    display: flex;
+    margin-left: 93px;
+  }
+
   .nav-list .link-current {
-    /* display: block;
+    display: block;
     padding-top: 21px;
-    padding-bottom: 21px; */
+    padding-bottom: 21px; 
+
     color: var(--accent-color);
   
     font-weight: 500;
@@ -97,24 +112,11 @@ html{
     line-height: 1.14;
     letter-spacing: 0.02em;
   }
-  .header-nav{
-    display: flex;
-    align-items: center;
-  }
-  .nav-list{
-    display: flex;
-  }
-  .list-item{
-    /* border: 1px solid red; */
-    margin-right: 54px;
-  }
-  .list-item:last-child{
-    margin-right: 0;
-  }
+  
   .nav-list .link {
-    /* display: block;
-  padding-top: 32px;
-  padding-bottom: 32px; */
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: #000000;
   
     font-weight: 500;
@@ -122,24 +124,21 @@ html{
     line-height: 1.14;
     letter-spacing: 0.02em;
   }
+
   .nav-list .link:hover,
   .nav-list .link:focus {
     color: var(--accent-color);
   }
+
   .contacts-nav{
-    display: flex;
-  }
-  .contacts-nav li + li {
-    margin-left: 50px;
-  }
-  /* .contacts-nav {
     display: flex;
     margin-left: auto;
   }
-  
+
   .contacts-nav li + li {
     margin-left: 50px;
-  } */
+  }
+  
   .contacts-nav a {
     color: var(--primary-text-color);
   
@@ -152,61 +151,72 @@ html{
   .contacts-nav a:hover {
     color: var(--accent-color);
   }
+   .list-item{
+    margin-right: 54px;
+  }
+  .list-item:last-child{
+    margin-right: 0;
+  } 
+
+  /* блок герой*/  
+  .hero {
+    background-color: #2f303a;
+    text-align: center;
+    padding-bottom: 200px;
+    padding-top: 200px;
+  }
+
+  .hero-title {
+    display: block;
+
+
+    margin-top: 0px;
+    margin-bottom: 30px;
+margin-bottom: 46px;
+text-transform: uppercase;
+    color: var(--background-color);
   
-  /*секции*/
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
+  }
+
+  .hero-button{
+    display: inline-block;
+    min-width: 200px;
+    padding: 10px 25px;
+    border-radius: 4px;
+    text-decoration: none;
+    border: none;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    margin-top: 0px;
+
+    color: var(--background-color);
+    background-color: var(--accent-color);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.06em;    
+  }
+
+/*секции*/
   .section-title {
+    margin-bottom: 50px;
     color: var(--title-text-color);
-  
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
   }
-
-  /* блок герой*/
-/*.hero {
-  background-color: #2f303a;
-  text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-
-.hero-title {
-  margin-top: 0px;
-  margin-bottom: 30px;
-
-  color: var(--background-color);
-
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
-
-  letter-spacing: 0.06em;
-}
-.hero-button {
-  display: inline-block;
-  border-radius: 4px;
-  padding: 10px 32px;
-  min-width: 200px;
-  margin-top: 0px;
-
-  color: var(--background-color);
-  background-color: var(--accent-color);
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-
-  text-decoration: none;
-} 
-  
+    
   /*особливості*/
-  .fetures .title {
+  .features .title {
+    margin-bottom: 10px;
     color: var(--title-text-color);
   
     font-weight: 700;
@@ -214,7 +224,7 @@ html{
     line-height: 1.14;
     letter-spacing: 0.03em;
   }
-  /* .visually-hidden {
+   .visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -223,22 +233,16 @@ html{
     padding: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
-  } */
+  } 
 
-  /* .fetures {
+   .features {
     display: flex;
     justify-content: space-between;
-    margin-left: -10px;
-    margin-top: -10px;
-  }
-  
-  .fetures-item {
-    flex-basis: calc((100% - 4 * 30px) / 4);
+   }
+
+  .features-item{
     width: 270px;
   }
-  .fetures-item:not(:last-child) {
-    margin-right: 30px;
-  } */
 
   .feture .text {
     color: var(--primary-text-color);
@@ -248,39 +252,20 @@ html{
     letter-spacing: 0.03em;
   }
   
-  .fetures .title {
-    margin-bottom: 10px;
-  color: var(--title-text-color);
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  /*чим ми займаємось*/
+
+  .image{
+    display: flex;
+    justify-content: space-between;
   }
-  
-  .title {
-    color: var(--title-text-color);
-  }
-
-  /*чим мы займаємось*/
-
-/* .image {
-  display: flex;
-  justify-content: space-between;
-}
-
-.image-work:not(:last-child) {
-  flex-basis: calc((100%-3 * 30px) / 3);
-  margin-right: 30px;
-  width: 370px;
-} */
 
   /*наша команда*/
   .team {
     display: flex;
     justify-content: space-between;
   }
-  .team-link:not(:last-child) {
+  /* .team-link:not(:last-child) {
     margin-right: 30px;
     width: 270px;
     padding-bottom: 30px;
@@ -290,7 +275,7 @@ html{
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-  }
+  } */
   
   .team .name {
     color: var(--title-text-color);
@@ -309,31 +294,6 @@ html{
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
-  }
-  /*блок герой*/
-  .hero {
-    background-color: #2f303a;
-  }
-  .hero-title {
-    color: var(--background-color);
-  
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
-    text-align: center;
-    letter-spacing: 0.06em;
-  }
-  .hero-button {
-    color: var(--background-color);
-  
-    background-color: var(--accent-color);
-  
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 2;
-    letter-spacing: 0.06em;
   }
   
   /*Footer*/
@@ -378,20 +338,6 @@ html{
     width: 73px;
     height: 38px;
     padding: 6px 22px;
-  }
-
-  .filter-button {
-    color: var(--title-text-color);
-    font-family: inherit;
-    cursor: pointer;
-    font-weight: 500;
-    line-height: 1.6;
-    letter-spacing: 0.03em;
-  }
-  .filter-button:hover,
-  .filter-button:focus {
-    color: var(--background-color);
-    background-color: var(--accent-color);
   }
   
   /*приклади рабіт*/

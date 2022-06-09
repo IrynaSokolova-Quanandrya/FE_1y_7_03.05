@@ -13,11 +13,10 @@
 <body>
 
     <!-- Шапка -->
-    <header class="page-header">
-    <div class="container header-nav">
+    <header>
+    <div class="header-nav container">
         <a class="logo" href="./"><span>Web</span>Studio</a>
-        <nav class="navigation"> 
-            
+        <nav>             
         <ul class="nav-list">               
             <li class="list-item"><a class="link link-current" href="./">Студія</a></li>
             <li class="list-item"><a class="link" href="./portfolio.html" target="_blank" rel="noopener noreferer">Портфоліо</a></li>
@@ -25,58 +24,56 @@
         </ul> 
         </nav>
         <ul class="contacts-nav">
-            <li><a class="item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="item" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
     </div>
     </header>
+    <!-- Основна секція -->
     <main>
-        <!-- Секція герой -->
+    <!-- Секція герой -->
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">ефективні рішення для вашого бізнесу</h1>
             <button type="button" class="hero-button">Замовити послугу</button>
             </div>
         </section>
-        <!-- Секція особливості -->
+    <!-- Секція особливості -->
         <section class="section">
             <div class="container">
-                <h2>Особливості</h2>
+                <h2 class="visually-hidden">Особливості</h2>
             <ul class="features">
                 <li class="features-item">
                     <h3 class="title ">УВАГА ДО ДЕТАЛЕЙ</h3>
-                    <p class="text">Lorem          
-                        ipsum dolor                     sit amet consectetur 
-                        adipisicing elit. Officiis, 
-                        a nemo perferendis quia accusamus temporibus repellat sequi architecto, et fugit in similique nam ipsa adipisci quae rerum quo tempora illo!</p>
-                </li>
-                <li>
-                    <h3 class="title">ПунктуальнІсть</h3>
                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, a nemo perferendis quia accusamus temporibus repellat sequi architecto, et fugit in similique nam ipsa adipisci quae rerum quo tempora illo!</p>
                 </li>
-                <li>
+                <li class="features-item">
+                    <h3 class="title">ПУНКТУАЛЬНІСТЬ</h3>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, a nemo perferendis quia accusamus temporibus repellat sequi architecto, et fugit in similique nam ipsa adipisci quae rerum quo tempora illo!</p>
+                </li>
+                <li class="features-item">
                     <h3 class="title">ПЛАНУВАННЯ</h3>
                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, a nemo perferendis quia accusamus temporibus repellat sequi architecto, et fugit in similique nam ipsa adipisci quae rerum quo tempora illo!</p>
                 </li>
-                <li>
-                    <h3 class="title">СУЧАСНІ ТЕхнології</h3>
+                <li class="features-item">
+                    <h3 class="title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, a nemo perferendis quia accusamus temporibus repellat sequi architecto, et fugit in similique nam ipsa adipisci quae rerum quo tempora illo!</p>
                 </li>                
             </ul>
             </div>
         </section>
-        <!-- Секція чим ми займаємось -->
+    <!-- Секція чим ми займаємось -->
         <section class="section">
             <div class="container">
                 <h2 class="section-title">Чим ми займаємося</h2>
-            <ul>
+            <ul class="image">
                 <li><img src="./img/desktop.jpg" alt="Зображення планшету"></li>
                 <li><img src="./img/laptop.jpg" alt="Зображення планшету"></li>
                 <li><img src="./img/desctop-1.jpg" alt="Зображення планшету"></li>
             </ul>
             </div>
         </section>
-        <!-- Секція наша команда -->
+    <!-- Секція наша команда -->
         <section class="section">
             <div class="container">
                 <h2 class="section-title">Наша команда</h2>
@@ -103,8 +100,7 @@
                 </li>
             </ul>
             </div>
-        </section>
-        
+        </section>        
     </main>
         <!-- Футер -->
         <footer class="footer">
