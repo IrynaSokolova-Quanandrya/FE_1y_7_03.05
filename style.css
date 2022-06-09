@@ -3,6 +3,7 @@
     --title-text-color: #212121;
     --accent-color: #2196f3;
     --background-color: #ffffff;
+    --background-button: #F5F4FA;
   }
 /* Глобальний border-box */
 
@@ -85,6 +86,7 @@ html{
   .header-nav{
     box-sizing: border-box;
     margin-bottom: 0;
+    border-bottom: 1px solid #ECECEC;;
     }
     
   .header-nav,
@@ -261,22 +263,26 @@ text-transform: uppercase;
   }
 
   /*наша команда*/
+  .our-team{
+    background-color: #F5F4FA;
+  }
   .team {
     display: flex;
     justify-content: space-between;
   }
-  /* .team-link:not(:last-child) {
+
+  .team-link:not(:last-child){    
     margin-right: 30px;
+  }
+  .team-link{
     width: 270px;
     padding-bottom: 30px;
+
+    background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
   }
-  .team-link {
-    background: #ffffff;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-  } */
-  
+    
   .team .name {
     color: var(--title-text-color);
   
@@ -288,6 +294,7 @@ text-transform: uppercase;
   }
   
   .team .position {
+    margin-bottom: 0;
     color: var(--primary-text-color);
   
     font-size: 16px;
@@ -295,8 +302,16 @@ text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.03em;
   }
+  .team-link img{
+    margin-bottom: 30px;
+  }
   
   /*Footer*/
+  .footer{
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+  
   .footer,
   .footer-address {
     color: #ffffff;
@@ -310,6 +325,7 @@ text-transform: uppercase;
     letter-spacing: 0.03em;
   }
   .footer-logo {
+    /* margin-bottom: 20px; */
     color: #ffffff;
   
     font-family: Raleway;
@@ -319,6 +335,10 @@ text-transform: uppercase;
     line-height: 1.2;
     letter-spacing: 0.03em;
   }
+  .footer-address{
+    margin-top: 20px;
+    margin-bottom: 9px;
+  }
   .footer-contacts-link {
     color: rgba(255, 255, 255, 0.6);
   }
@@ -327,21 +347,65 @@ text-transform: uppercase;
     color: var(--accent-color);
   }
   
+  /* .footer-contacts-link:not(:last-child){
+    margin-bottom: 9px;
+  } */
   /*PORTFOLIO*/
   
   /*filters*/
   
+  .filter{
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 50px;
+  }
+  .filter li:not(:last-child){
+    margin-right: 8px;
+  }
   .filter-link{
     display: inline-block;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 4px;
-    width: 73px;
+    min-width: 73px;
     height: 38px;
     padding: 6px 22px;
+
+    /* font-family: 'Roboto'; */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+
+    color: var(--title-text-color);
+    background-color: var(--background-button);
+
   }
+.filter-link:hover,
+.filter-link:focus{
+background-color: var(--accent-color);
+color: var(--background-color);
+}
+
   
   /*приклади рабіт*/
   
+  .examples{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+
+  .examples-link{
+    flex-basis: calc((100% - 90px) / 3);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
   .examples-titel {
     color: var(--title-text-color);
   
