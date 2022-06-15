@@ -2,19 +2,19 @@
 
 /* ракета */
 .button {
-    /* display: inline-flex; */
+    display: inline-flex;
     /* align-items: center; */
-    /* padding: 10px 20px; */
-    /* background-color: teal; */
-    /* color: #fff; */
-    /* border-radius: 3px; */
-    /* text-decoration: none; */
-    /* cursor: pointer; */
+    padding: 10px 20px;
+    background-color: teal;
+    color: #fff;
+    border-radius: 3px;
+    text-decoration: none;
+    cursor: pointer;
   }
   
   .button:hover,
   .button:focus {
-    /* background-color: palevioletred; */
+    background-color: palevioletred;
   }
   
   .button::before {

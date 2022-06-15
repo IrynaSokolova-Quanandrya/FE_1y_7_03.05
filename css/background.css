@@ -20,32 +20,34 @@
   /* cat */
   .box:nth-child(1) {
     background-color: #2196f3;
-    background-image: url("../bird.png");
-    /* background-repeat: no-repeat; */
-    /* background-position: center; 
-    bottom 20px right 20px*/
-    /* background-size: contain; */
+    background-image: url("../img/icons/cat.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
   }
   
   /* bird */
   .box:nth-child(2) {
     background-color: #9c27b0;
-    /* background-image: url("../images/bird.png"); */
-    /* background-repeat: repeat-x; */
+    background-image: url("../img/icons/bird.png");
+    background-repeat: repeat-x;
+    background-position: center;
+
     /* background-size: 32px; */
   }
   
   /* dog */
   .box:nth-child(3) {
     background-color: #009688;
-    /* background-image: url("../images/dog.png"); */
-    /* background-repeat: repeat-y; */
-    /* background-position: center; */
+    background-image: url("../img/icons/dog.png");
+    background-repeat: repeat-y;
+    background-position: center;
   }
   
   /* turtle */
   .box:nth-child(4) {
-    /* background-color: #3f51b5; */
-    /* background-image: url("../images/turtle.png"); */
-    /* background-repeat: repeat; */
+    background-color: #3f51b5;
+    background-image: url("../img/icons/turtle.png");
+    background-repeat: repeat;
   }
