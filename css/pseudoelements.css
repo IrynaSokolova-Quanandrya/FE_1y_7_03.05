@@ -1,5 +1,10 @@
 /* BUTTON */
-
+ul{
+  list-style: none;
+}
+li+li{
+  margin-top: 20px;
+}
 /* ракета */
 .button {
     display: inline-flex;
