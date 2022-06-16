@@ -19,9 +19,11 @@ li+li{
   
   .button:hover,
   .button:focus {
-    background-color: palevioletred;
+    /* background-color: palevioletred; */
   }
-  
+  .icon{
+    
+  }
   .button::before {
     /* content: ""; */
     /* width: 20px; */
