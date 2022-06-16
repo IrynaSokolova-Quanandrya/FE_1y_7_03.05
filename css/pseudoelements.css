@@ -1,5 +1,10 @@
 /* BUTTON */
-
+ul{
+  list-style: none;
+}
+li+li{
+  margin-top: 20px;
+}
 /* ракета */
 .button {
     display: inline-flex;
@@ -14,56 +19,64 @@
   
   .button:hover,
   .button:focus {
-    background-color: palevioletred;
+    /* background-color: palevioletred; */
   }
+  /* .icon{
+    width: 20px;
+    height: 20px; */
+    /* outline: 1px solid red; */
+    /* margin-right: 10px;
+    background-image: url(../img/icons/rocket-icon.png);
+    background-size: contain;
+  } */
   
-  .button::before {
-    /* content: ""; */
-    /* width: 20px; */
-    /* height: 20px; */
+  .button::after {
+    content: "";
+    width: 20px;
+    height: 20px;
     /* margin-right: 10px; */
-    /* background-image: url("../img/icons/rocket-icon.png"); */
-    /* background-size: contain; */
+margin-left: 10px;
+    /* outline: 1px solid red; */
+
+    background-image: url("../img/icons/rocket-icon.png");
+    background-size: contain;
   }
   
   /* LIST */
   
   .list {
-    /* display: flex; */
-    /* padding: 0; */
-    /* list-style: none; */
+    display: flex;
+    padding: 0;
+    list-style: none;
   }
   
   .list-item {
-    /* width: 350px; */
-    /* margin: 10px; */
-    /* padding: 10px; */
-    /* border-radius: 4px; */
-    /* box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), */
-      /* 0px 1px 3px rgba(0, 0, 0, 0.12); */
+    width: 350px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 1px 3px rgba(0, 0, 0, 0.12);
   }
   
   .list-item::before {
-    /* display: block; */
-    /* content: ""; */
-    /* height: 120px; */
-    /* background-size: contain; */
-    /* background-repeat: no-repeat; */
-    /* background-position: center; */
-    /* background-color: #ccc; */
+    display: block;
+    content: "";
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ccc;
   }
   
   .icon-delivery::before {
-    /* background-image: url("../images/cat.png"); */
+    background-image: url("../img/icons/cat.png");
+  }
+  .icon-mobile::before{
+    background-image: url("../img/icons/mobile-icon.svg");
   }
   
-  .icon-mobile::before {
-    /* background-image: url("../images/mobile-icon.svg"); */
-  }
   
-  .icon-code::before {
-    /* background-image: url("../images/code-icon.svg"); */
-  }
   
   .list-item > .title {
     /* margin-top: 0; */
