@@ -4,8 +4,10 @@
     --accent-color: #2196f3;
     --background-color: #ffffff;
     --background-button: #F5F4FA;
-  }
+}
 /* Глобальний border-box */
+
+
 
 html{
   box-sizing: border-box;
