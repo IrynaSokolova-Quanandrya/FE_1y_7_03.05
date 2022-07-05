@@ -373,6 +373,37 @@ text-transform: uppercase;
     background-color: var(--accent-color);
   }
   
+  /* Постійні клієнти */
+
+  .customers{
+    display: flex;
+  }
+
+  .customers-item:not(:last-child){
+    margin-right: 30px; 
+  }
+
+  .customers-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 170px;
+    height: 90px;
+    border: 1px solid var(--svg);
+    border-radius: 4px;
+
+    color: var(--svg);
+  }
+
+  .customers-link:hover,
+  .customers-link:focus{
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+  }
+  .customers-icon{
+    fill: currentColor;
+  }
   
   /*Footer*/
   .footer:not(:last-child){
@@ -415,9 +446,18 @@ text-transform: uppercase;
     color: var(--accent-color);
   }
   
-  /* .footer-contacts-link:not(:last-child){
-    margin-bottom: 9px;
-  } */
+  /* Приєднуйтесь */
+
+  .footer .social-link{
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--background-color);
+  }
+
+  
+  .footer .social-icon{
+    fill: currentColor;
+  }
+
   /*PORTFOLIO*/
   
   /*filters*/
