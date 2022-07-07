@@ -12,14 +12,14 @@
 </head>
 <body>   
     
-    <ul>
+    <!-- <ul>
         <li><a href="./01-icons.html">Відносне позиціонування (карточка з іконками)/a></li>
         <li><a href="./02-overlay.html">Картка з іконками та оверлей</a></li>
         <li><a href="./03-fixed-header.html">ФІксований хедер</a></li>
         <li><a href="./04-modal.html">Модальне вікно</a></li>
         <li><a href="./05-dropdown.html">Випадаюче меню</a></li>
 
-    </ul>
+    </ul> -->
 
     <!-- Шапка -->
     <header>
@@ -59,6 +59,12 @@
                 вашого бізнесу
                 </h1>
             <button type="button" class="hero-button">Замовити послугу</button>
+            </div>
+            <!-- Модальне вікно -->
+            <div class="backdrop">
+                <div class="modal">
+                    <button type="button" class="modal-button"></button>
+                </div>
             </div>
         </section>
         
@@ -314,7 +320,7 @@
     </main>
         <!-- Футер -->
         <footer class="footer">
-            <div class="container">
+            <div class="container footer-items">
                 <!-- Лого та контакти -->
                 <div class="footer-contacts">
                 <a class="footer-logo" href=""><span>Web</span>Studio</a>
@@ -359,7 +365,7 @@
             </div>
         </div>
 </footer>
-<script src="./index.js" type="module"></script>
+<script src="./js/modal.js" type="module"></script>
 </body>
 </html>
 
