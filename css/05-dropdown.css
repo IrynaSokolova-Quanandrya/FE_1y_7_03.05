@@ -1,35 +1,35 @@
-.menu {
+/* .menu {
   padding: 0;
   margin: 0;
   list-style: none;
 
   display: flex;
-}
+} */
 
-.menu-item {
+/* .menu-item {
   position: relative;
   margin-right: 15px;
   outline: 2px solid tomato;
-}
+} */
 
-.menu-item:hover .submenu {
+/* .menu-item:hover .submenu {
   display: block;
-}
+} */
 
-.menu-item:hover .menu-link {
+/* .menu-item:hover .menu-link {
   background-color: palevioletred;
-}
+} */
 
-.menu-link {
+/* .menu-link {
   display: block;
   padding: 10px 20px;
 
   text-decoration: none;
   background-color: teal;
   color: white;
-}
+} */
 
-.submenu {
+/* .submenu {
   position: absolute;
   left: 0;
   top: 100%;
@@ -43,8 +43,8 @@
   background-color: #ccc;
 
   display: none;
-}
+} */
 
-.submenu a {
+/* .submenu a {
   text-decoration: none;
-}
+} */
