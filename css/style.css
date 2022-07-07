@@ -410,7 +410,12 @@ text-transform: uppercase;
     padding-bottom: 60px;
     padding-top: 60px;
 }
-  
+
+  .footer-items{
+    display: flex;
+    align-items: baseline;
+  }
+
   .footer,
   .footer-address {
     color: #ffffff;
@@ -438,8 +443,12 @@ text-transform: uppercase;
     margin-top: 20px;
     margin-bottom: 9px;
   }
+
+  .footer-contacts{
+    margin-right: 70px;
+  }
   .footer-contacts-link {
-    color: rgba(255, 255, 255, 0.6);
+     color: rgba(255, 255, 255, 0.6); 
   }
   .footer-contacts-link:hover,
   .footer-contacts-link:focus {
@@ -448,16 +457,36 @@ text-transform: uppercase;
   
   /* Приєднуйтесь */
 
-  .footer .social-link{
-    background-color: rgba(255, 255, 255, 0.1);
+  .join-networks{
+    color: var(--background-color);
+    /* margin-bottom: 20px; */
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .social-network-list{
+    margin-top: 20px;
+  }
+
+
+  .join .social-link{
+    background-color: rgba(255, 255, 255, 0.1); /* #2f303a */
     color: var(--background-color);
   }
 
-  
-  .footer .social-icon{
+ 
+  .join .social-icon{ 
+/* Наслідує колір від батьківського елементу
+ в стані спокою та при ховері і фокусі */
     fill: currentColor;
   }
 
+  .join .social-link:hover,
+  .join .social-link:focus{
+    background-color: var(--accent-color);
+    /* color: red; */
+  }
   /*PORTFOLIO*/
   
   /*filters*/
