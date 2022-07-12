@@ -257,6 +257,10 @@ text-transform: uppercase;
     background-color: var(--background-color);
   }
 
+  .backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
   .modal-button{
     position: absolute;
     top: 8px;
