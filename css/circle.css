@@ -1,22 +1,48 @@
-.content-circle{
-    width: 100px;
-    height: 100px;
-    background-color: #fff;
-    border-radius: 50%;
-    position: relative;
-    left: 0;
+body{
+    background-color: #ec46f5;
 }
-  /* @keyframes wite-circle {
-      0%{left: 0;}
-      100%{right: 100px;}
-  }
+a{
+    color: #fff;
+}
+.wrapper{
+    margin-top: 100px;
+}
+      
+    .content-circle{
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background-color: #fff;
+        border-radius: 50%;
+        left: 0;
+
+        animation: white-circle 2000ms linear infinite alternate;
+    }
+
+    @keyframes white-circle {
+        0%{
+            left: 0;
+
+        }
+        25%{
+            background-color: teal;
+            top: 10px;
+        }
+        50%{
+            border-radius: 0;
+            background-color: green;
+            top: 50px;
+        }
+        75%{
+            background-color: tomato;
+            top: 100px;
+        }
+        100%{
+            left: 500px;
+        }
+        
+    }
+.content-circle:hover{
+    animation-play-state: paused;
+}
   
-  .circle{
-      animation-name: ;
-      animation-duration: ;
-      animation-timing-function: ;
-      animation-iteration-count: ;
-      animation-direction: ;
-      animation-delay: ;
-      animation-fill-mode: ;
-  } */
