@@ -1,22 +1,48 @@
-/* body{
+body{
     background-color: #ec46f5;
-} */
-/* a{
+}
+a{
     color: #fff;
-} */
-/* .wrapper{
+}
+.wrapper{
     margin-top: 100px;
-} */
+}
       
-/* .content-circle{ */
-    /* position: relative; */
-    /* width: 100px; */
-    /* height: 100px; */
-    /* background-color: #fff; */
-    /* border-radius: 50%;     */
-    /* left: 0; */
-    /* animation:  */
-       
-/* } */
-/* .content-circle:hover */
+    .content-circle{
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background-color: #fff;
+        border-radius: 50%;
+        left: 0;
+
+        animation: white-circle 2000ms linear infinite alternate;
+    }
+
+    @keyframes white-circle {
+        0%{
+            left: 0;
+
+        }
+        25%{
+            background-color: teal;
+            top: 10px;
+        }
+        50%{
+            border-radius: 0;
+            background-color: green;
+            top: 50px;
+        }
+        75%{
+            background-color: tomato;
+            top: 100px;
+        }
+        100%{
+            left: 500px;
+        }
+        
+    }
+.content-circle:hover{
+    animation-play-state: paused;
+}
   
