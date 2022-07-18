@@ -1,10 +1,11 @@
 - QnA
 
-- CSS3-анімація
-- @keyframes - ключові кадри
-- animate.css
-- додаємо анімацію до проєкту (модалка, посилання, кнопки)
-- підсвічуємо сторінку на якій знаходимося
-- підкреслення поточної сторінки (scaleX0 vs scaleX1)
+- Верстаємо форму: тег label, input, form
+- Розглядаємо атрибути name, type, id, for, autocomplete, autofocus, placeholder
+- Input type: text, tel, email,checkboks, summit, button, radio, date, file
+- textarea: resize:none
+- стилізуємо форми
+- ::placeholder
+- кастомний чекбокс
 - комміт
 - резюме
