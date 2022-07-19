@@ -296,6 +296,11 @@ text-transform: uppercase;
     background-size: contain;
   }
 
+  /* Форма */
+  .textarea{
+    resize: none;
+  }
+
 /*секции*/
   .section-title {
     margin-bottom: 50px;
