@@ -12,13 +12,13 @@
 </head>
 <body>   
     
-    <ul>
+    <!-- <ul>
         <li><a href="./button.html">Кнопка з іконками</a></li>
         <li><a href="./circle.html">Круг-анімація</a></li>
         <li><a href="./bounce.html">Підпригування</a></li>
         <li><a href="./05-dropdown.html">Випадаюче меню</a></li>
 
-    </ul>
+    </ul> -->
 
     <!-- Шапка -->
     <header>
@@ -63,6 +63,113 @@
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
                     <button type="button" class="modal-button" data-modal-close></button>
+                    <!-- Форма модального вікна -->
+                    <form class="form js-speaker-form" autocomplete="on">
+                        <label for="user-name">Ім'я</label>
+                        <input 
+                            class="form-field" 
+                            type="text" 
+                            name="user-name" 
+                            id="user-name"                            
+                        >
+                        <br>
+<!-- placeholder="Tom Lee" -->
+                        <label for="user-tel">Телефон</label>
+                        <input class="form-field" type="tel" name="user-tel" id="user-tel" autofocus >
+<br>
+                        <label for="user-mail">Пошта</label>
+                        <input class="form-field" type="email" name="user-mail" id="user-mail" autocomplete="off">
+<br>
+                        <!-- Зв"язування мітки з інпутом без атрибутів -->
+                        <!-- <label>Пошта
+                            <input 
+                            class="form-field" 
+                            type="email" 
+                            name="user-mail" 
+                            autocomplete="off">
+                        </label> -->
+                        <!-- Чекбокси -->
+                        <!-- <label for="html">HTML</label>
+                        <input 
+                            type="checkbox" 
+                            name="html" 
+                            id="html"
+                            >
+                        <label for="css">CSS</label>
+                            <input 
+                            type="checkbox" 
+                            name="css" 
+                            id="css"
+                            >
+                            <label for="js">JS</label>
+                        <input 
+                            type="checkbox" 
+                            name="js" 
+                            id="js"
+                            >
+<br> -->
+
+                            <!-- Радіобатони -->
+                            <!-- <label for="js">JS</label>
+                            <input 
+                                type="radio" 
+                                name="js" 
+                                id="js"
+                            > 
+                            <label for="js">JS</label>
+                            <input 
+                                type="radio" 
+                                name="js" 
+                                id="js"
+                            >
+                            <label for="js">JS</label>
+                            <input 
+                                type="radio" 
+                                name="js" 
+                                id="js"
+                            > -->
+                            <!-- Відправка форми -->
+                            
+                            <!-- <label for="button">Надіслати</label>
+                            <input 
+                                type="button" 
+                                name="button" 
+                                id="button"
+                            > -->
+                            <!-- Data -->
+                            <!-- <label for="data">Data</label>
+                            <input 
+                                type="datetime-local" 
+                                name="data" 
+                                id="data"
+                            > -->
+
+                            <!-- Завантаження файлу -->
+                            <!-- <label for="data">File</label>
+                            <input 
+                                type="file" 
+                                name="data" 
+                                id="data"
+                            > -->
+                            <label for="comments">Коментарі</label>
+                            <textarea 
+                                class="textarea" 
+                                name="comments" 
+                                id="comments"
+                                rows="10" 
+                                placeholder="Введіть коментар">
+                            </textarea>
+<br>
+                            <label class="field-label">
+                                <input type="checkbox" name="checkbox" value="checkbox">
+                                Погоджуюсь з розсилкою і приймаю 
+                               <a href="./" >Умови договору</a> 
+
+                            </label>
+<br>
+                            <button type="submit">Надіслати</button>
+                    
+                    </form>
                 </div>
             </div>
         </section>
@@ -365,6 +472,7 @@
         </div>
 </footer>
 <script src="./js/modal.js" type="module"></script>
+<script src="./js/form.js" type="module"></script>
 </body>
 </html>
 
