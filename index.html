@@ -113,8 +113,11 @@
                             </li>
                         </ul>
                         <div class="checkbox">
-                            <label class="field-label">
-                                <input type="checkbox" name="checkbox" value="checkbox">
+                            <label class="field-label" for="checkbox">
+                                <input class="field-checkbox" type="checkbox" name="checkbox" id="checkbox" value="checkbox"/>
+                                <svg class="checkbox-icon" width="16" height="15">
+                                    <use href="./img/icons.svg#icon-check"></use>
+                                </svg>
                                 Погоджуюсь з розсилкою і приймаю 
                                <a href="./" >Умови договору</a> 
                             </label>
@@ -176,9 +179,30 @@
             <div class="container">
                 <h2 class="section-title">Чим ми займаємося</h2>
             <ul class="image">
-                <li><img src="./img/desktop.jpg" alt="Зображення планшету"></li>
-                <li><img src="./img/laptop.jpg" alt="Зображення планшету"></li>
-                <li><img src="./img/desctop-1.jpg" alt="Зображення планшету"></li>
+                <li>
+                    <div class="thumb">
+                        <img src="./img/desktop.jpg" alt="Зображення планшету">
+                        <div class="thumb-text">
+                            <p>ДЕСКТОПНІ ЗАСТОСУНКИ</p>
+                        </div>
+                    </div>                    
+                </li>
+                <li>
+                    <div class="thumb">
+                        <img src="./img/laptop.jpg" alt="Зображення планшету">
+                        <div class="thumb-text">
+                            <p>МОБІЛЬНІ ЗАСТОСУНКИ</p>
+                        </div>
+                    </div>                    
+                </li>
+                <li>
+                    <div class="thumb">
+                        <img src="./img/desctop-1.jpg" alt="Зображення планшету">
+                        <div class="thumb-text">
+                            <p>ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
+                        </div>
+                    </div>                    
+                </li>
             </ul>
             </div>
         </section>
