@@ -214,8 +214,8 @@ html{
 
     margin-top: 0px;
     margin-bottom: 30px;
-margin-bottom: 46px;
-text-transform: uppercase;
+    margin-bottom: 46px;
+    text-transform: uppercase;
     color: var(--background-color);
   
     font-weight: 900;
@@ -302,7 +302,7 @@ text-transform: uppercase;
   .field{
     position: relative;
     text-align: start;
-    margin-bottom: 20px;
+
   }
   .form,
   .fields,
@@ -311,6 +311,10 @@ text-transform: uppercase;
     flex-direction: column;
   }
 
+  .fields {
+    margin-bottom: 20px;
+  }
+  
   .form-field,
   .textarea{
     padding-left: 42px;
@@ -318,7 +322,15 @@ text-transform: uppercase;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    outline: none;
   }
+
+  /* .form-field:focus,
+  .form-field:hover{
+    border: 1px solid var(--accent-color);
+  } */
+  
 
   .field:not(:last-child){
     margin-bottom: 10px;
@@ -343,22 +355,106 @@ text-transform: uppercase;
     font-size: 12px;
     margin-bottom: 4px;
   }
+
   .form-icon{
     position: absolute;
-
     display: inline-block;
 
+    top: 50%;
+    left: 15px;
+    margin: 0;
 
-    /* fill: currentColor; */
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+
   }
+
+  .field:focus-within .form-field,
+  .field:hover .form-field,
+  .field:focus-within textarea,
+  .field:hover textarea
+  {
+    border: 1px solid var(--accent-color);
+  }
+  .field:focus-within > .form-icon,
+  .field:hover > .form-icon {
+    fill: var(--accent-color);
+} 
+
+  /* .form-field:focus + .form-icon{
+    fill: #2196f3;
+  } */
 
   .btn{
     width: 200px;
     margin: auto;
   }
+  /* чекбокс */
+
   .checkbox{
     margin-bottom: 30px;
   }
+
+  .field-checkbox {
+    appearance: none;
+    outline: none;
+  } 
+
+  .checkbox-icon{
+    display: inline-block;
+    margin-right: 8px;
+    padding: 0;
+    border: 2px solid var(--title-text-color);
+    border-radius: 2px;
+  }
+
+  .field-checkbox:focus-within + .checkbox-icon{
+    border: 2px solid var(--accent-color)
+  }
+  .field-checkbox:checked + .checkbox-icon{
+    background-color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+  }
+
+  .field-label a{
+    color: var(--accent-color);
+    text-decoration: underline;
+  }
+
+
+  /* .field-checkbox::after{
+    content: '';
+    display: inline-flex;
+    width: 10px;
+    height: 10px;
+    border: 1px solid red;
+  }
+  .field-checkbox:focus.field-checkbox::after{
+    background-color: red;
+  } */
+
+  /* .field-checkbox:focus-within + .checkbox-icon {
+    border: 2px solid var(--accent-color);
+  } */
+
+  /* .field-label {
+    display: block;
+  } */
+  /* .field-label .link {
+    color: var(--accent-color);
+    text-decoration: underline;
+  } */
+  /* .checkbox-icon {
+    display: inline-block;
+    margin-right: 8px;
+    padding: 0;
+    border: 2px solid var(--title-text-color);
+    border-radius: 2px;
+  } */
+  /* .field-checkbox:checked + .checkbox-icon {
+    background-color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+  } */
+  
 /*секции*/
   .section-title {
     margin-bottom: 50px;
@@ -423,9 +519,44 @@ text-transform: uppercase;
 
   /*чим ми займаємось*/
 
-  .image{
+  .section.work {
+    padding-top: 0;
+  }
+  .image {
     display: flex;
     justify-content: space-between;
+  }
+  
+  .image-work:not(:last-child) {
+    flex-basis: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    width: 370px;
+  }
+  .thumb {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .thumb-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    height: 70px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    background-color: rgba(47, 48, 58, 0.8);
+    color: var(--background-color);
+  }
+  .thumb-text > p {
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
   }
 
   /*наша команда*/
