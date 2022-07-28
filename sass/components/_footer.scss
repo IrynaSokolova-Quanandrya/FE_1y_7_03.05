@@ -1,0 +1,79 @@
+/*Footer*/
+.footer{
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+  .footer-items{
+    display: flex;
+    align-items: baseline;
+  }
+
+  .footer,
+  .footer-address {
+    color: #ffffff;
+    background-color: #2f303a;
+  
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+  }
+  .footer-logo {
+    color: #ffffff;
+  
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+  }
+  .footer-address{
+    margin-top: 20px;
+    margin-bottom: 9px;
+  }
+
+  .footer-contacts{
+    margin-right: 70px;
+  }
+  .footer-contacts-link {
+     color: rgba(255, 255, 255, 0.6); 
+  }
+  .footer-contacts-link:hover,
+  .footer-contacts-link:focus {
+    color: var(--accent-color);
+  }
+  
+  /* Приєднуйтесь */
+
+  .join-networks{
+    color: var(--background-color);
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .social-network-list{
+    margin-top: 20px;
+  }
+
+
+  .join .social-link{
+    background-color: rgba(255, 255, 255, 0.1); /* #2f303a */
+    color: var(--background-color);
+  }
+
+ 
+  .join .social-icon{ 
+/* Наслідує колір від батьківського елементу
+ в стані спокою та при ховері і фокусі */
+    fill: currentColor;
+  }
+
+  .join .social-link:hover,
+  .join .social-link:focus{
+    background-color: var(--accent-color);
+  }

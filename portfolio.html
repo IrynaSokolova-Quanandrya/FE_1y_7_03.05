@@ -8,26 +8,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">    
     <!-- Зовнішній файл стилю -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
-<body>
+<body>   
 
     <!-- Шапка -->
     <header>
-    <div class="header-nav container">
-        <a class="logo" href="./"><span>Web</span>Studio</a>
-        <nav>             
-        <ul class="nav-list">               
-            <li class="list-item"><a class="link" href="./">Студія</a></li>
-            <li class="list-item"><a class="link current" href="./portfolio.html" target="_blank" rel="noopener noreferer">Портфоліо</a></li>
-            <li class="list-item"><a class="link" href="">Контакти</a></li>
-        </ul> 
-        </nav>
-        <ul class="contacts-nav">
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
-    </div>
+        <div class="header-nav container">
+            <a class="logo" href="./"><span>Web</span>Studio</a>
+            <nav>             
+            <ul class="nav-list">               
+                <li class="list-item"><a class="link " href="./">Студія</a></li>
+                <li class="list-item"><a class="link current" href="./portfolio.html" target="_blank" rel="noopener noreferer">Портфоліо</a></li>
+                <li class="list-item"><a class="link" href="">Контакти</a></li>
+            </ul> 
+            </nav>
+            <ul class="contacts-nav">
+                <li>
+                    <a class="contacts-link" href="mailto:info@devstudio.com">
+                        <svg class="contact-icon" width="16" height="12">
+                            <use href="./img/icons.svg#icon-envelope-hover" ></use>
+                        </svg>                
+                    info@devstudio.com
+                    </a>
+                </li>
+                <li><a class="contacts-link" href="tel:+380961111111">
+                    <svg class="contact-icon" width="10" height="16">
+                        <use href="./img/icons.svg#icon-Phone"></use>
+                    </svg>
+                    +38 096 111 11 11</a></li>
+            </ul>
+        </div>
     </header>
     <!--Основна секція-->
 <main>
@@ -43,7 +54,7 @@
         <li><a class="filter-link" href="">Маркетинг</a></li>
     </ul>
     <ul class="examples">
-        <li  class="examples-link">
+        <li class="examples-link">
             <a class="link-thumb" href=""> 
                 <div class="img-thumb">
                     <img class="card" src="./img/portfolio/laptop.jpg" 
@@ -60,54 +71,168 @@
                 <h2  class="examples-titel">Технокряк</h2>
                     <p class="examples-type">Веб-сайт</p>
             </div>
+        
             </a>
         </li>
         <li class="examples-link">
-            <a href=""><img src="./img/portfolio/players.jpg" alt="Два баскетболиста" width="370" height="294">
-            <h2 class="examples-titel">Постер New Orlean vs Golden Star</h2>
-            <p class="examples-type">Дизайн</p>
+            <a class="link-thumb" href="">
+                <div class="img-thumb">
+                    <img 
+                    src="./img/portfolio/players.jpg" 
+                    alt="Два баскетболиста" 
+                    width="370" 
+                    height="294">
+                        <div class="overlay">
+                                <p>Технокрик це сучасний майданчик поширення коронавірусу. 
+                                Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.
+                                </p>
+                            </div>
+                        </div>
+                            <div class="link-text">
+                                <h2 class="examples-titel">Постер New Orlean vs Golden Star</h2>
+                                <p class="examples-type">Дизайн</p>
+                            </div>
             </a>
         </li>
         <li class="examples-link">
-            <a href=""><img src="./img/portfolio/seafood.jpg" alt="Рыба с надписью The seafood restaurant" width="370" height="294">
-            <h2 class="examples-titel">Ресторан Seafood</h2>
-            <p class="examples-type">Застосунки</p>
+            <a class="link-thumb" href="">
+                <div class="img-thumb">
+                <img 
+                src="./img/portfolio/seafood.jpg" 
+                alt="Рыба с надписью The seafood restaurant" 
+                width="370" 
+                height="294">
+                    <div class="overlay">
+                            <p>Технокрик це сучасний майданчик поширення коронавірусу. 
+                            Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.
+                            </p>
+                        </div>
+                    <div class="link-text">
+                        <h2 class="examples-titel">Ресторан Seafood</h2>
+                        <p class="examples-type">Застосунки</p>
+                    </div>
+            
             </a>
         </li>
         <li class="examples-link">
-            <a href=""><img src="./img/portfolio/headphone.jpg" alt="Наушники" width="370" height="294">
-            <h2 class="examples-titel">Проєкт Prime</h2>
-            <p class="examples-type">Маркетинг</p>
+            <a class="link-thumb" href="">
+                <div class="img-thumb">
+                <img 
+                    src="./img/portfolio/headphone.jpg" 
+                    alt="Наушники" 
+                    width="370" 
+                    height="294">
+                    <div class="overlay">
+                            <p>Технокрик це сучасний майданчик поширення коронавірусу. 
+                            Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.
+                            </p>
+                        </div>
+                        <div class="link-text">
+                            <h2 class="examples-titel">Проєкт Prime</h2>
+                            <p class="examples-type">Маркетинг</p>
+                        </div>
+                    </div>
             </a>
         </li>
         <li class="examples-link">
-            <a href=""><img src="./img/portfolio/boxes.jpg" alt="Две коробки" width="370" height="294">
-            <h2 class="examples-titel">Проєкт Boxes</h2>
-            <p class="examples-type">Застосунки</p>
+            <a class="link-thumb" href="">
+               <div class="img-thumb">
+                <img 
+                    src="./img/portfolio/boxes.jpg" 
+                    alt="Две коробки" 
+                    width="370" 
+                    height="294">
+                    <div class="overlay">
+                            <p>Технокрик це сучасний майданчик поширення коронавірусу. 
+                            Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.
+                            </p>
+                    </div>
+                </div>
+                <div class="link-text">
+                    <h2 class="examples-titel">Проєкт Boxes</h2>
+                    <p class="examples-type">Застосунки</p>
+                </div>            
             </a>
         </li>
         <li class="examples-link">
-            <a href=""><img src="./img/portfolio/monitor.jpg" alt="Черный монитор" width="370" height="294">
-            <h2 class="examples-titel">Inspiration has no Borders</h2>
-            <p class="examples-type">Веб-сайт</p>
+            <a class="link-thumb" href="">
+                <div class="img-thumb">
+                    <img 
+                    src="./img/portfolio/monitor.jpg" 
+                    alt="Черный монитор" 
+                    width="370" 
+                    height="294">
+                        <div class="overlay">
+                            <p>Технокрик це сучасний майданчик поширення коронавірусу. 
+                            Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.
+                            </p>
+                        </div>
+                </div>
+                <div class="link-text">
+                    <h2 class="examples-titel">Inspiration has no Borders</h2>
+                    <p class="examples-type">Веб-сайт</p>
+                </div>            
             </a>
         </li>
         <li class="examples-link">
-            <a href=""><img src="./img/portfolio/magazine.jpg" alt="Книга в развороте" width="370" height="294">
-            <h2 class="examples-titel">Видавництво Limited Edition</h2>
-            <p class="examples-type">Дизайн</p>
+            <a class="link-thumb" href="">
+                <div class="img-thumb">
+                    <img 
+                        src="./img/portfolio/magazine.jpg" 
+                        alt="Книга в развороте" 
+                        width="370" 
+                        height="294">
+                    <div class="overlay">
+                            <p>Технокрик це сучасний майданчик поширення коронавірусу. 
+                            Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.
+                            </p>
+                        </div>
+                    </div>
+                        <div class="link-text">
+                            <h2 class="examples-titel">Видавництво Limited Edition</h2>
+                            <p class="examples-type">Дизайн</p>
+                        </div>
             </a>
         </li>
         <li class="examples-link">
-            <a href=""><img src="./img/portfolio/labeltag.jpg" alt="Этикетка с надписью LA BEL TAG" width="370" height="294">
-            <h2 class="examples-titel">Проєкт LAB</h2>
-            <p class="examples-type">Маркетинг</p>
+            <a class="link-thumb" href="">
+                <div class="img-thumb">
+                    <img 
+                        src="./img/portfolio/labeltag.jpg" 
+                        alt="Этикетка с надписью LA BEL TAG" 
+                        width="370" 
+                        height="294">
+                    <div class="overlay">
+                            <p>Технокрик це сучасний майданчик поширення коронавірусу. 
+                            Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.
+                            </p>
+                        </div>
+                    </div>
+                        <div class="link-text">
+                            <h2 class="examples-titel">Проєкт LAB</h2>
+                            <p class="examples-type">Маркетинг</p>
+                        </div>
             </a>
         </li>
         <li class="examples-link">
-            <a href=""><img src="./img/portfolio/desktop.jpg" alt="Ноутбук" width="370" height="294">
-            <h2 class="examples-titel">Growing Business</h2>
-            <p class="examples-type">Застосунки</p>
+            <a class="link-thumb" href="">
+                <div class="img-thumb">
+                <img 
+                    src="./img/portfolio/desktop.jpg" 
+                    alt="Ноутбук" 
+                    width="370" 
+                    height="294">
+                        <div class="overlay">
+                            <p>Технокрик це сучасний майданчик поширення коронавірусу. 
+                            Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.
+                            </p>
+                        </div>
+                    </div>
+                        <div class="link-text">
+                            <h2 class="examples-titel">Growing Business</h2>
+                            <p class="examples-type">Застосунки</p>
+
+                        </div>
             </a>
         </li>
     </ul>
@@ -117,14 +242,50 @@
 </main>
     <!--Footer-->
     <footer class="footer">
-        <div class="container">
+        <div class="container footer-items">
+            <!-- Лого та контакти -->
+            <div class="footer-contacts">
             <a class="footer-logo" href=""><span>Web</span>Studio</a>
-        <address class="footer-address">м. Київ, пр-т Лесі Українки, 26</address>
-        <ul class="footer-contacts">
-            <li><a class="footer-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="footer-contacts-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
+                <addres class="addres">
+                            <p class="footer-address">м. Київ, пр-т Лесі Українки, 26</p>
+                        <ul class="footer-contacts">
+                            <li class="link"><a class="footer-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                            <li class="link"><a class="footer-contacts-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                        </ul>
+                </addres>
         </div>
+        <!-- Приєднуйтесь -->
+        <div class="join">
+            <b class="join-networks">Приєднуйтесь</b>
+            <ul class="social-network-list">
+                <li class="network-item"> 
+                    <a class="social-link" href=""> 
+                        <svg class="social-icon" width="20" height="20">
+                            <use href="./img/icons.svg#icon-instagram"></use>
+                        </svg> 
+                    </a> 
+                </li>
+                <li  class="network-item">
+                    <a class="social-link" href="" >
+                        <svg class="social-icon" width="20" height="16">
+                                <use href="./img/icons.svg#icon-tweeter"></use>
+                            </sv> 
+                        </a> 
+                    </li>
+                <li  class="network-item" > 
+                    <a class="social-link" href=""> 
+                        <svg class="social-icon" width="20" height="20">
+                            <use href="./img/icons.svg#icon-facebook"></use></svg>
+                         </a> 
+                        </li>
+                <li  class="network-item" > 
+                    <a class="social-link" href=""> 
+                        <svg class="social-icon" width="20" height="20">
+                            <use href="./img/icons.svg#icon-linkedin"></use></svg> 
+                            </a> 
+            </ul>
+        </div>
+    </div>
 </footer>
 </body>
 </html>
