@@ -1,0 +1,31 @@
+/* Постійні клієнти */
+
+.customers{
+    display: flex;
+  }
+
+  .customers-item:not(:last-child){
+    margin-right: 30px; 
+  }
+
+  .customers-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 170px;
+    height: 90px;
+    border: 1px solid var(--svg);
+    border-radius: 4px;
+
+    color: var(--svg);
+  }
+
+  .customers-link:hover,
+  .customers-link:focus{
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+  }
+  .customers-icon{
+    fill: currentColor;
+  }

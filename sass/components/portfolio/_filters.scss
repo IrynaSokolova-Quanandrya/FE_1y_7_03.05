@@ -1,0 +1,36 @@
+/*filters*/
+  
+.filter{
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 50px;
+  }
+  .filter li:not(:last-child){
+    margin-right: 8px;
+  }
+  .filter-link{
+    display: inline-block;
+    border-radius: 4px;
+    min-width: 73px;
+    height: 38px;
+    padding: 6px 22px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+
+    color: var(--title-text-color);
+    background-color: var(--background-button);
+
+  }
+.filter-link:hover,
+.filter-link:focus{
+background-color: var(--accent-color);
+color: var(--background-color);
+}
