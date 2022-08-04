@@ -69,12 +69,27 @@ ul {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .logo {
@@ -413,15 +428,6 @@ span {
 }
 
 /*особливості*/
-.features .title {
-  margin-bottom: 10px;
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -433,13 +439,50 @@ span {
   overflow: hidden;
 }
 
-.features {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.features .title {
+  margin-bottom: 10px;
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+@media (min-width: 768px) {
+  .features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+@media (min-width: 1200px) {
+  .features {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (min-width: 768px) {
+  .features-item {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  .features-item {
+    width: 270px;
+  }
+}
+
+.feture .text {
+  color: var(--primary-text-color);
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
 }
 
 .features-icon {
@@ -452,24 +495,11 @@ span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 270px;
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--background-button);
 }
 
-.features-item {
-  width: 270px;
-}
-
-.feture .text {
-  color: var(--primary-text-color);
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-}
-
-/*чим ми займаємось*/
 .section.work {
   padding-top: 0;
 }
@@ -523,7 +553,6 @@ span {
   text-transform: uppercase;
 }
 
-/*наша команда*/
 .our-team {
   background-color: #F5F4FA;
 }
@@ -601,16 +630,14 @@ span {
   border-radius: 50%;
   color: var(--svg);
 }
+.social-link:hover, .social-link:focus {
+  color: var(--background-color);
+  background-color: var(--accent-color);
+}
 
 .social-icon {
   fill: currentColor;
   margin: 12px;
-}
-
-.social-link:hover,
-.social-link:focus {
-  color: var(--background-color);
-  background-color: var(--accent-color);
 }
 
 /* Постійні клієнти */
@@ -640,9 +667,7 @@ span {
   border-radius: 4px;
   color: var(--svg);
 }
-
-.customers-link:hover,
-.customers-link:focus {
+.customers-link:hover, .customers-link:focus {
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
 }
@@ -700,9 +725,7 @@ span {
 .footer-contacts-link {
   color: rgba(255, 255, 255, 0.6);
 }
-
-.footer-contacts-link:hover,
-.footer-contacts-link:focus {
+.footer-contacts-link:hover, .footer-contacts-link:focus {
   color: var(--accent-color);
 }
 
@@ -723,16 +746,14 @@ span {
   background-color: rgba(255, 255, 255, 0.1); /* #2f303a */
   color: var(--background-color);
 }
+.join .social-link:hover, .join .social-link:focus {
+  background-color: var(--accent-color);
+}
 
 .join .social-icon {
   /* Наслідує колір від батьківського елементу
    в стані спокою та при ховері і фокусі */
   fill: currentColor;
-}
-
-.join .social-link:hover,
-.join .social-link:focus {
-  background-color: var(--accent-color);
 }
 
 /*filters*/
@@ -766,9 +787,7 @@ span {
   color: var(--title-text-color);
   background-color: var(--background-button);
 }
-
-.filter-link:hover,
-.filter-link:focus {
+.filter-link:hover, .filter-link:focus {
   background-color: var(--accent-color);
   color: var(--background-color);
 }
@@ -844,9 +863,7 @@ span {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.link-thumb:hover .overlay,
-.link-thumb:focus .overlay {
+.link-thumb:hover .overlay, .link-thumb:focus .overlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }

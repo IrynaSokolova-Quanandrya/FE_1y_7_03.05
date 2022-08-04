@@ -1,13 +1,4 @@
 /*особливості*/
-.features .title {
-    margin-bottom: 10px;
-    color: var(--title-text-color);
-  
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-  }
    .visually-hidden {
     position: absolute;
     width: 1px;
@@ -19,25 +10,37 @@
     overflow: hidden;
   } 
 
-   .features {
-    display: flex;
-    justify-content: space-between;
+  .features .title {
+    margin-bottom: 10px;
+    color: var(--title-text-color);
+  
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+  }
+   .features {    
+      @media (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+      }
+      @media (min-width: $desktop) {      
+      justify-content: space-between;         
+      }
    }
-
-   .features-icon{
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    @include centeredFlex;
-
-    width: 270px;
-    height: 120px;
-
-    margin-bottom: 30px;
-    background-color: var(--background-button);
-   }
+   
   .features-item{
-    width: 270px;
+    // width: 100%;
+    
+    @media (min-width: $tablet) {
+      width: calc((100% - 4 * 15px) /2);
+      margin: 15px;
+      // width: 354px;
+    } 
+    @media (min-width: $desktop) {
+      width: 270px;
+    }   
   }
 
   .feture .text {
@@ -47,3 +50,10 @@
     line-height: 1.7;
     letter-spacing: 0.03em;
   }
+
+  .features-icon{
+    @include centeredFlex;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--background-button);
+   }
