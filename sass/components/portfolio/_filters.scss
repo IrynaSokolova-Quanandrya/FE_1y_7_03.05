@@ -28,9 +28,9 @@
     color: var(--title-text-color);
     background-color: var(--background-button);
 
-  }
-.filter-link:hover,
-.filter-link:focus{
-background-color: var(--accent-color);
-color: var(--background-color);
+    &:hover,
+    &:focus{
+    background-color: var(--accent-color);
+    color: var(--background-color);
 }
+  }

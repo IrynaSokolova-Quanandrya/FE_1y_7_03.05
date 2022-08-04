@@ -15,9 +15,9 @@
      background-position: center;
      background-size: cover;
      background-repeat: no-repeat;
-  }
+  
 
-  .hero-title {
+  &-title {
     display: block;
 
 
@@ -34,7 +34,7 @@
     letter-spacing: 0.06em;
   }
 
-  .hero-button{
+  &-button{
     display: inline-block;
     min-width: 200px;
     padding: 10px 25px;
@@ -52,3 +52,4 @@
     line-height: 2;
     letter-spacing: 0.06em;    
   }
+}

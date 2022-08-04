@@ -1,4 +1,3 @@
-/*наша команда*/
 .our-team{
     background-color: #F5F4FA;
   }
@@ -15,8 +14,8 @@
     padding-bottom: 30px;
 
     background: #FFFFFF;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
   }
     
   .team .name {
@@ -60,14 +59,15 @@
     height: 44px;
     border-radius: 50%;
     color: var(--svg);
+
+    &:hover,
+    &:focus{
+    color: var(--background-color);
+    background-color: var(--accent-color);
+  }
   }
   .social-icon{
     fill: currentColor;
     margin: 12px;
   }
-  .social-link:hover,
-  .social-link:focus
-  {
-    color: var(--background-color);
-    background-color: var(--accent-color);
-  }
+  

@@ -25,9 +25,10 @@
    }
 
    .features-icon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    @include centeredFlex;
 
     width: 270px;
     height: 120px;
@@ -45,47 +46,4 @@
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-  }
-  
-
-  /*чим ми займаємось*/
-
-  .section.work {
-    padding-top: 0;
-  }
-  .image {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .image-work:not(:last-child) {
-    flex-basis: calc((100% - 60px) / 3);
-    margin-right: 30px;
-    width: 370px;
-  }
-  .thumb {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-  .thumb-text {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin: 0;
-    width: 100%;
-    height: 70px;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    background-color: rgba(47, 48, 58, 0.8);
-    color: var(--background-color);
-  }
-  .thumb-text > p {
-    margin-bottom: 0;
-    font-size: 14px;
-    line-height: 16px;
-    text-transform: uppercase;
   }

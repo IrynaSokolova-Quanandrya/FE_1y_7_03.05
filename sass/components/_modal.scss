@@ -11,11 +11,12 @@
 
     opacity: 1;
     transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
 
-  .backdrop.is-hidden .modal{
-    transform: translate(-50%, -50%) scale(0.7) rotateY(450deg);
-  }
+    &.is-hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+  } 
 
   .modal{
     position: absolute;
@@ -31,12 +32,13 @@
 
     transform: translate(-50%, -50%) scale(1);
     transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .backdrop.is-hidden &{
+      transform: translate(-50%, -50%) scale(0.7) rotateY(450deg);
+    }
   }
 
-  .backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-  }
+  
   .modal-button{
     position: absolute;
     top: 8px;
