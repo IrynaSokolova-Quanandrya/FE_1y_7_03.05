@@ -3,8 +3,19 @@
     padding-bottom: 94px;
     margin-top: 0;
     margin-bottom: 0;
+
+    &-title {
+      margin-bottom: 50px;
+      color: var(--title-text-color);
+  
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.2;
+      text-align: center;
+      letter-spacing: 0.03em;
+    }
   }
-   
+  
 .container {
     width: 1200px;
   
@@ -15,13 +26,4 @@
     padding-right: 15px; 
   }
 
-  .section-title {
-    margin-bottom: 50px;
-    color: var(--title-text-color);
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    text-align: center;
-    letter-spacing: 0.03em;
-  }
+  
