@@ -5,7 +5,7 @@
   }
 
   .customers-item:not(:last-child){
-    flex-basis: calc((100%-180px) / 6);
+    // flex-basis: calc((100%-180px) / 6);
     margin-right: 30px; 
   }
 
