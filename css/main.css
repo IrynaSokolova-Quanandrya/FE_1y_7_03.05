@@ -501,16 +501,18 @@ span {
 }
 
 .section.work {
-  padding-top: 0;
+  padding: 0;
+}
+@media (max-width: 1199px) {
+  .section.work {
+    display: none;
+  }
 }
 
 .image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .image-work:not(:last-child) {
@@ -533,6 +535,10 @@ span {
   margin: 0;
   width: 100%;
   height: 70px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -546,37 +552,54 @@ span {
   color: var(--background-color);
 }
 
-.thumb-text > p {
-  margin-bottom: 0;
-  font-size: 14px;
-  line-height: 16px;
-  text-transform: uppercase;
-}
-
 .our-team {
   background-color: #F5F4FA;
 }
 
 .team {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
-
-.team-link:not(:last-child) {
-  margin-right: 30px;
+@media (min-width: 768px) {
+  .team {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    margin: -15px;
+  }
 }
 
 .team-link {
-  width: 270px;
   padding-bottom: 30px;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 768px) {
+  .team-link {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-link {
+    width: calc((100% - 120px) / 4);
+    margin: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .team-link:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .team .name {
