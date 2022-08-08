@@ -288,6 +288,7 @@ span {
   width: 528px;
   height: 581px;
   padding: 40px;
+  border-radius: 4px;
   background-color: var(--background-color);
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
@@ -663,7 +664,6 @@ span {
   margin: 12px;
 }
 
-/* Постійні клієнти */
 .customers {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -703,6 +703,7 @@ span {
 .footer {
   padding-bottom: 60px;
   padding-top: 60px;
+  background-color: #2f303a;
 }
 
 .footer-items {
@@ -717,7 +718,6 @@ span {
 .footer,
 .footer-address {
   color: #ffffff;
-  background-color: #2f303a;
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;

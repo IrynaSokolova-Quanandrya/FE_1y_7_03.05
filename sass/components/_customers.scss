@@ -1,18 +1,15 @@
-/* Постійні клієнти */
-
 .customers{
     display: flex;
-  }
+}
 
   .customers-item:not(:last-child){
     // flex-basis: calc((100%-180px) / 6);
     margin-right: 30px; 
   }
 
+  
+
   .customers-link{
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
     @include centeredFlex ();
     
     width: 170px;
@@ -28,8 +25,7 @@
     color: var(--accent-color);
   }
   }
-
-  
+ 
   .customers-icon{
     fill: currentColor;
   }
