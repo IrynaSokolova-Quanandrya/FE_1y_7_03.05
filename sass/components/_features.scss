@@ -30,13 +30,10 @@
       }
    }
    
-  .features-item{
-    // width: 100%;
-    
+  .features-item{    
     @media (min-width: $tablet) {
       width: calc((100% - 4 * 15px) /2);
       margin: 15px;
-      // width: 354px;
     } 
     @media (min-width: $desktop) {
       width: 270px;

@@ -2,17 +2,30 @@
 .footer{
     padding-bottom: 60px;
     padding-top: 60px;
+    background-color: #2f303a;
 }
 
-  .footer-items{
-    display: flex;
-    align-items: baseline;
+  .container.footer-container{
+    @media (max-width: 767px) {
+      text-align: center;
+    }
+
+    @media (min-width: $tablet) {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    @media (min-width: $desktop) {
+      display: flex;
+      align-items: baseline;
+    }
+    
   }
 
   .footer,
   .footer-address {
     color: #ffffff;
-    background-color: #2f303a;
+    
   
     font-family: Roboto;
     font-style: normal;
@@ -37,7 +50,14 @@
   }
 
   .footer-contacts{
-    margin-right: 70px;
+    @media (max-width: 767px) {
+      margin-bottom: 60px;
+    }
+  
+    @media (min-width: $desktop) {
+      margin-right: 70px;
+    }
+    
   }
   .footer-contacts-link {
      color: rgba(255, 255, 255, 0.6); 
