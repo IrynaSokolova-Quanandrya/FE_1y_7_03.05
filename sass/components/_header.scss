@@ -18,11 +18,7 @@
     }
     
   .header-nav,
-  .contacts-nav
-  {
-    // display: flex;
-    // justify-content: flex-start;
-    // align-items: center;  
+  .contacts-nav  {
     @include centeredFlex(flex-start)  
   }
 
@@ -82,15 +78,6 @@
     margin-left: 50px;
   }
   
-  .contacts-nav a {
-    color: var(--primary-text-color);
-  
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-  }
-  
    .list-item{
     margin-right: 54px;
   }
@@ -100,6 +87,13 @@
   .contacts-nav .contacts-link{
     display: flex;
     align-items: center;
+
+    color: var(--primary-text-color);
+  
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 
     &:focus,
     &:hover
