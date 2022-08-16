@@ -1,0 +1,38 @@
+body{
+    font-family: roboto, sans-serif;
+    outline: 1px solid green;
+}
+
+.box{
+    border: 1px solid black;
+    font-size: 24;
+    
+}
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+width: 800px;
+
+    padding: 15px;
+    margin: 0;
+    list-style: none;
+}
+
+.list .list-item.calc{
+    flex-basis: calc((800px - 40px) / 2);
+    margin: 10px;
+
+
+    min-width: 50px;
+    border: 1px solid red;
+    margin-bottom: 10px;
+    
+}
+
+.text{
+    font-size: 24px;
+}
+
+
+
