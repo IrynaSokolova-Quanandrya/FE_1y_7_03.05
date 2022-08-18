@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>   
-    <!-- <a href="./flex-calc.html">Функція calc</a> -->
     <!-- Шапка -->
     <header>
     <div class="container header-nav ">
@@ -19,7 +18,7 @@
         <!-- Кнопка мобільного меню -->
         <button 
                 type="button" 
-                class="mobile-button is-open" 
+                class="mobile-button" 
                 data-menu-button 
                 aria-expanded="false">
             <svg width="40" 
@@ -30,9 +29,9 @@
             </svg>
         </button>
 
-        <!-- <div class="mobile-menu" id="mobile-menu" data-menu>
-            <div class="navigation">
-                <nav>             
+        <div class="mobile-menu" id="mobile-menu" data-menu>
+            <div>
+                <nav class="navigation">             
                 <ul class="nav-list">               
                     <li class="list-item"><a class="link current" href="./">Студія</a></li>
                     <li class="list-item"><a class="link" href="./portfolio.html" target="_blank" rel="noopener noreferer">Портфоліо</a></li>
@@ -42,8 +41,8 @@
         </div>
             <div>
                 <div class="contacts">
-                    <ul class="contacts-nav">
-                <li>
+                    <ul class="contacts-list">
+                <li class="contacts-item">
                     <a class="contacts-link" href="mailto:info@devstudio.com">
                         <svg class="contact-icon" width="16" height="12">
                             <use href="./img/icons.svg#icon-envelope-hover" ></use>
@@ -51,7 +50,7 @@
                     info@devstudio.com
                     </a>
                 </li>
-                <li><a class="contacts-link" href="tel:+380961111111">
+                <li class="contacts-item"><a class="contacts-link" href="tel:+380961111111">
                     <svg class="contact-icon" width="10" height="16">
                         <use href="./img/icons.svg#icon-Phone"></use>
                     </svg>
@@ -81,7 +80,7 @@
                     </li>
                 </ul>
             </div>
-        </div> -->
+        </div>
     </div>
     </header>
     <!-- Основна секція -->
