@@ -6,20 +6,27 @@
   @media (min-width: $tablet) {
     margin-left: 89px;    
   }
-
+  
+  @media screen and (min-width: $desktop) {
+    margin-left: 305px;
+  }
 }
 
-.contacts-list{
-    display: flex;
-
+.contacts-list{  
     @media (max-width: 767px) {
+      display: flex;
       flex-direction: column-reverse;
     }
 
+    @media (min-width: $tablet) {
+      justify-content: flex-start;
+      align-content: center;      
+    }  
 
-
-    @media (min-width: $desktop) {
-      margin-left: auto;
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      justify-content: flex-start;
+      align-content: center;
     }
   }
 
@@ -33,23 +40,44 @@
     @media (max-width: 767px) {
       margin-bottom: 32px;
     }
+    @media (min-width: $tablet) {
+      margin-left: 0;      
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-left: 30px;
+    }
   }
-  .contacts-list .contacts-link{
+
+  .contacts-item:first-child{
+    @media (max-width: $tablet) {
+      margin-bottom: 13px;
+    }
+  }
+  
+  .contacts-list .contacts-link{    
+    color: var(--primary-text-color);
     @media (max-width: 767px){
       font-size: 24;
       font-weight: 500;
       line-height: 1.14;
-      letter-spacing: 0.02em;
-      color: var(--primary-text-color);
+      letter-spacing: 0.02em;      
     }
-    @media (min-width: $tablet){
 
+    @media (min-width: $tablet){  
+      display: flex;  
+      font-size: 12px;  
     }
 
     @media (min-width: $desktop) {
       display: flex;
       align-items: center;
            
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
       font-size: 14px;      
     }
 

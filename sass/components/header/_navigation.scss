@@ -18,10 +18,6 @@
     @media (min-width: $tablet) {
       margin-left: 90px;      
     }
-
-    @media (min-width: $tablet) {
-      margin-left: 93px;      
-    }
   }
 
   .nav-list .link {
@@ -37,6 +33,7 @@
     }
 
     @media (min-width: $tablet) {
+    position: relative;
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
