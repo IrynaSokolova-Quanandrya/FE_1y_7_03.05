@@ -106,23 +106,30 @@ ul {
     margin-left: 89px;
   }
 }
-
-.contacts-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .contacts {
+    margin-left: 335px;
+  }
 }
+
 @media (max-width: 767px) {
   .contacts-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .contacts-list {
-    margin-left: auto;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
 }
 
@@ -137,14 +144,40 @@ ul {
     margin-bottom: 32px;
   }
 }
+@media (min-width: 768px) {
+  .contacts-item:last-child {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-item:last-child {
+    margin-left: 30px;
+  }
+}
 
+@media (max-width: 768px) {
+  .contacts-item:first-child {
+    margin-bottom: 13px;
+  }
+}
+
+.contacts-list .contacts-link {
+  color: var(--primary-text-color);
+}
 @media (max-width: 767px) {
   .contacts-list .contacts-link {
     font-size: 24;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--primary-text-color);
+  }
+}
+@media (min-width: 768px) {
+  .contacts-list .contacts-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 12px;
   }
 }
 @media (min-width: 1200px) {
@@ -155,6 +188,12 @@ ul {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
     font-size: 14px;
   }
 }
@@ -234,11 +273,6 @@ span {
     margin-left: 90px;
   }
 }
-@media (min-width: 768px) {
-  .nav-list {
-    margin-left: 93px;
-  }
-}
 
 .nav-list .link {
   color: #000000;
@@ -254,6 +288,7 @@ span {
 }
 @media (min-width: 768px) {
   .nav-list .link {
+    position: relative;
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -318,6 +353,7 @@ span {
     -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
+    z-index: 2;
   }
   .mobile-button:hover, .mobile-button:focus {
     fill: var(--accent-color);
@@ -338,15 +374,13 @@ span {
   }
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .mobile-menu {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: var(--background-color);
-    display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -354,13 +388,71 @@ span {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    background-color: var(--background-color);
+    display: none;
     padding: 48px 83px 48px 40px;
+    z-index: 1;
   }
   .mobile-menu.is-open {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
+}
+@media (min-width: 768px) {
+  .mobile-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (min-width: 1200px) {
+  .mobile-menu {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+.networks-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+@media (min-width: 768px) {
+  .networks-list {
+    display: none;
+  }
+}
+
+.networks-item:not(:last-child):after {
+  content: "";
+  width: 1px;
+  height: 22px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.networks-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2196F3;
 }
 
 /* блок герой*/
