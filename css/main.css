@@ -108,7 +108,7 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .contacts {
-    margin-left: 335px;
+    margin-left: 305px;
   }
 }
 
@@ -125,6 +125,18 @@ ul {
 }
 @media (min-width: 768px) {
   .contacts-list {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;

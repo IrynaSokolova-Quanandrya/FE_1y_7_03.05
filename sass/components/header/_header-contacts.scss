@@ -8,7 +8,7 @@
   }
   
   @media screen and (min-width: $desktop) {
-    margin-left: 335px;
+    margin-left: 305px;
   }
 }
 
@@ -22,6 +22,12 @@
       justify-content: flex-start;
       align-content: center;      
     }  
+
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      justify-content: flex-start;
+      align-content: center;
+    }
   }
 
   .contacts-list li + li {
@@ -57,7 +63,7 @@
       line-height: 1.14;
       letter-spacing: 0.02em;      
     }
-    
+
     @media (min-width: $tablet){  
       display: flex;  
       font-size: 12px;  
